@@ -1,7 +1,7 @@
-USER-AGENT,Disney*,GMedia
-HOST-SUFFIX,disneyplus.com,GMedia
-HOST-SUFFIX,disney-plus.net,GMedia
-HOST-SUFFIX,dssott.com,GMedia
-HOST-SUFFIX,bamgrid.com,GMedia
-HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,GMedia
-HOST,cdn.registerdisney.go.com,GMedia
+USER-AGENT,Disney*,DisneyPlus
+HOST-SUFFIX,disneyplus.com,DisneyPlus
+HOST-SUFFIX,disney-plus.net,DisneyPlus
+HOST-SUFFIX,dssott.com,DisneyPlus
+HOST-SUFFIX,bamgrid.com,DisneyPlus
+HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,DisneyPlus
+HOST,cdn.registerdisney.go.com,DisneyPlus
