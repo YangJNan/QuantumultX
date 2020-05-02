@@ -1,4 +1,4 @@
-# > HBO NOW & HBO Go
+# > HBO NOW & HBO Go &HBO MAX
 USER-AGENT,HBO%20NOW*,HBO
 HOST-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,HBO
 HOST-SUFFIX,hbo.com,HBO
