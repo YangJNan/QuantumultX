@@ -67,15 +67,6 @@ HOST-SUFFIX,akamaized.net,GMedia
 HOST-SUFFIX,foxplus.com,GMedia
 HOST-SUFFIX,theplatform.com,GMedia
 
-# > HBO NOW & HBO Go
-USER-AGENT,HBO%20NOW*,GMedia
-HOST-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,GMedia
-HOST-SUFFIX,hbo.com,GMedia
-HOST-SUFFIX,hboasia.com,GMedia
-HOST-SUFFIX,hbogo.com,GMedia
-HOST-SUFFIX,hbogoasia.com,GMedia
-HOST-SUFFIX,hbogoasia.hk,GMedia
-
 # > Hulu(フールー)
 USER-AGENT,Hulu*,GMedia
 HOST-SUFFIX,happyon.jp,GMedia
