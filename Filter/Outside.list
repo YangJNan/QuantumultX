@@ -6,6 +6,9 @@ USER-AGENT,Instagram*,Outside
 USER-AGENT,Resilio Sync*,Outside
 USER-AGENT,WhatsApp*,Outside
 
+# > Google Voice
+HOST,voice.telephony.goog,Outside
+
 # > Line
 HOST-SUFFIX,lin.ee,Outside
 HOST-SUFFIX,line.me,Outside
@@ -40,22 +43,6 @@ HOST-SUFFIX,humblebundle.com,Outside
 HOST-SUFFIX,steamcommunity.com,Outside
 HOST-SUFFIX,steampowered.com,Outside
 HOST-SUFFIX,steamstatic.com,Outside
-
-# > Telegram
-HOST-KEYWORD,telegram,Outside
-DOMAIN-SUFFIX,t.me,Outside
-DOMAIN-SUFFIX,tdesktop.com,Outside
-DOMAIN-SUFFIX,telegra.ph,Outside
-DOMAIN-SUFFIX,telegram.me,Outside
-DOMAIN-SUFFIX,telegram.org,Outside
-IP-CIDR,91.108.4.0/22,Outside
-IP-CIDR,91.108.56.0/22,Outside
-IP-CIDR,91.108.56.0/23,Outside
-IP-CIDR,109.239.140.0/24,Outside
-IP-CIDR,149.154.160.0/22,Outside
-IP-CIDR,149.154.164.0/22,Outside
-IP-CIDR,149.154.168.0/22,Outside
-IP-CIDR,149.154.172.0/22,Outside
 
 # > TikTok
 USER-AGENT,TikTok*,Outside
@@ -152,6 +139,7 @@ HOST-SUFFIX,box.net,Outside
 HOST-SUFFIX,boxun.com,Outside
 HOST-SUFFIX,cachefly.net,Outside
 HOST-SUFFIX,cbc.ca,Outside
+HOST-SUFFIX,cdn.angruo.com,Outside
 HOST-SUFFIX,cdn.segment.com,Outside
 HOST-SUFFIX,cdnst.net,Outside
 HOST-SUFFIX,celestrak.com,Outside
@@ -214,7 +202,6 @@ HOST-SUFFIX,evernote.com,Outside
 HOST-SUFFIX,extmatrix.com,Outside
 HOST-SUFFIX,eyny.com,Outside
 HOST-SUFFIX,fabric.io,Outside
-HOST-SUFFIX,fast.com,Outside
 HOST-SUFFIX,fastly.net,Outside
 HOST-SUFFIX,fastmail.com,Outside
 HOST-SUFFIX,fc2.com,Outside
@@ -283,6 +270,7 @@ HOST-SUFFIX,imageshack.us,Outside
 HOST-SUFFIX,img.ly,Outside
 HOST-SUFFIX,imgur.com,Outside
 HOST-SUFFIX,imore.com,Outside
+HOST-SUFFIX,inoreader.com,Outside
 HOST-SUFFIX,ingress.com,Outside
 HOST-SUFFIX,insder.co,Outside
 HOST-SUFFIX,instapaper.com,Outside
@@ -388,6 +376,7 @@ HOST-SUFFIX,ping.pe,Outside
 HOST-SUFFIX,pinterest.com,Outside
 HOST-SUFFIX,pixelmator.com,Outside
 HOST-SUFFIX,pixiv.net,Outside
+HOST-SUFFIX,pixivsketch.net,Outside
 HOST-SUFFIX,pixnet.net,Outside
 HOST-SUFFIX,playpcesor.com,Outside
 HOST-SUFFIX,playstation.com,Outside
@@ -399,6 +388,7 @@ HOST-SUFFIX,polymer-project.org,Outside
 HOST-SUFFIX,popo.tw,Outside
 HOST-SUFFIX,potato.im,Outside
 HOST-SUFFIX,redd.it,Outside
+HOST,repo.maven.apache.org,Outside
 HOST-SUFFIX,prfct.co,Outside
 HOST-SUFFIX,proxfree.com,Outside
 HOST-SUFFIX,psiphon3.com,Outside
@@ -638,13 +628,12 @@ HOST-SUFFIX,ying.com,Outside
 HOST-SUFFIX,yorkbbs.ca,Outside
 HOST-SUFFIX,youmaker.com,Outside
 HOST-SUFFIX,yourlisten.com,Outside
-HOST-SUFFIX,youtu.be,Outside
 HOST-SUFFIX,yoyo.org,Outside
-HOST-SUFFIX,ytimg.com,Outside
 HOST-SUFFIX,zacebook.com,Outside
 HOST-SUFFIX,zalmos.com,Outside
 HOST-SUFFIX,zaobao.com.sg,Outside
 HOST-SUFFIX,zeutch.com,Outside
+HOST-SUFFIX,zoom.us,Outside
 HOST-SUFFIX,zynamics.com,Outside
 
 # > Force some domains which are fucked by GFW while resolving DNS,or do not respect the system Proxy
