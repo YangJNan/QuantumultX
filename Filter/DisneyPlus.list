@@ -1,7 +1,11 @@
 USER-AGENT,Disney*,DisneyPlus
+HOST,cdn.registerdisney.go.com,DisneyPlus
+HOST,cdn.cdn.unid.go.com,DisneyPlus
+HOST-SUFFIX,bamgrid.com,DisneyPlus
+HOST-SUFFIX,braze.com,DisneyPlus
+HOST-SUFFIX,conviva.com,DisneyPlus
+HOST-SUFFIX,disney.demdex.net,DisneyPlus
 HOST-SUFFIX,disneyplus.com,DisneyPlus
 HOST-SUFFIX,disney-plus.net,DisneyPlus
 HOST-SUFFIX,dssott.com,DisneyPlus
-HOST-SUFFIX,bamgrid.com,DisneyPlus
 HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,DisneyPlus
-HOST,cdn.registerdisney.go.com,DisneyPlus
