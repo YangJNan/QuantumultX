@@ -1,3 +1,4 @@
+# > Youtube
 USER-AGENT,*youtube*,YouTube
 USER-AGENT,YouTube*,YouTube
 HOST-KEYWORD,youtube,YouTube
@@ -7,3 +8,7 @@ HOST-SUFFIX,gvt2.com,YouTube
 HOST-SUFFIX,youtu.be,YouTube
 HOST,youtubei.googleapis.com,YouTube
 HOST-SUFFIX,ytimg.com,YouTube
+
+# > Youtube Music
+USER-AGENT,*YouTubeMusic*,YouTube
+USER-AGENT,*com.google.ios.youtubemusic*,YouTube
