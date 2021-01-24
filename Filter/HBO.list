@@ -8,3 +8,8 @@ HOST-SUFFIX,hbogoasia.com,HBO
 HOST-SUFFIX,hbogoasia.hk,HBO
 HOST-SUFFIX,hbonow.com,HBO
 HOST-SUFFIX,hbomax.com,HBO
+DOMAIN-SUFFIX,hbo.com,HBO
+DOMAIN-SUFFIX,hbogo.com,HBO
+DOMAIN-SUFFIX,hbonow.com,HBO
+USER-AGENT,HBOMAX*,HBO
+DOMAIN-SUFFIX,hbomax.com,HBO
