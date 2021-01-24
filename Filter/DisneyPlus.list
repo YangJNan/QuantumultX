@@ -9,3 +9,9 @@ HOST-SUFFIX,disneyplus.com,DisneyPlus
 HOST-SUFFIX,disney-plus.net,DisneyPlus
 HOST-SUFFIX,dssott.com,DisneyPlus
 HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,DisneyPlus
+DOMAIN-SUFFIX,bamgrid.com,Disney+
+DOMAIN-SUFFIX,disneyplus.com,Disney+
+DOMAIN-SUFFIX,disney-plus.net,Disney+
+DOMAIN-SUFFIX,disneystreaming.com,Disney+
+DOMAIN-SUFFIX,dssott.com,Disney+
+DOMAIN,cdn.registerdisney.go.com,Disney+
