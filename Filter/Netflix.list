@@ -1,5 +1,26 @@
 # > Netflix
 USER-AGENT,Argo*,Netflix
+HOST,netflix.com.edgesuite.net,Netflix
+HOST-SUFFIX,fast.com,Netflix
+HOST-SUFFIX,netflix.com,Netflix
+HOST-SUFFIX,netflix.net,Netflix
+HOST-SUFFIX,netflixdnstest0.com,Netflix
+HOST-SUFFIX,netflixdnstest1.com,Netflix
+HOST-SUFFIX,netflixdnstest2.com,Netflix
+HOST-SUFFIX,netflixdnstest3.com,Netflix
+HOST-SUFFIX,netflixdnstest4.com,Netflix
+HOST-SUFFIX,netflixdnstest5.com,Netflix
+HOST-SUFFIX,netflixdnstest6.com,Netflix
+HOST-SUFFIX,netflixdnstest7.com,Netflix
+HOST-SUFFIX,netflixdnstest8.com,Netflix
+HOST-SUFFIX,netflixdnstest9.com,Netflix
+HOST-SUFFIX,nflxext.com,Netflix
+HOST-SUFFIX,nflximg.com,Netflix
+HOST-SUFFIX,nflximg.net,Netflix
+HOST-SUFFIX,nflxso.net,Netflix
+HOST-SUFFIX,nflxvideo.net,Netflix
+HOST-KEYWORD,dualstack.apiproxy-device-prod-nlb-,Netflix
+HOST-KEYWORD,dualstack.ichnaea-web-,Netflix
 DOMAIN-SUFFIX,fast.com,Netflix
 DOMAIN-SUFFIX,netflix.com,Netflix
 DOMAIN-SUFFIX,netflix.net,Netflix
@@ -30,6 +51,7 @@ IP-CIDR,54.148.37.5/32,Netflix
 IP-CIDR,64.120.128.0/17,Netflix
 IP-CIDR,66.197.128.0/17,Netflix
 IP-CIDR,69.53.224.0/19,Netflix
+IP-CIDR,103.87.204.0/22,Netflix
 IP-CIDR,108.175.32.0/20,Netflix
 IP-CIDR,185.2.220.0/22,Netflix
 IP-CIDR,185.9.188.0/22,Netflix
