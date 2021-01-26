@@ -25,12 +25,6 @@ HOST-SUFFIX,onedrive.com,Outside
 HOST-SUFFIX,skype.com,Outside
 HOST-SUFFIX,storage.live.com,Outside
 
-# > Pornhub
-HOST-SUFFIX,phncdn.com,Outside
-HOST-SUFFIX,phprcdn.com,Outside
-HOST-SUFFIX,pornhub.com,Outside
-HOST-SUFFIX,pornhubpremium.com,Outside
-
 # > Spark
 HOST-SUFFIX,api.amplitude.com,Outside
 HOST-SUFFIX,app.smartmailcloud.com,Outside
