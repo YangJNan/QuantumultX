@@ -32,11 +32,14 @@ HOST-SUFFIX,mesh.com,Microsoft
 HOST-SUFFIX,microsoft-tst.com,Microsoft
 HOST-SUFFIX,microsoft.com,Microsoft
 HOST-SUFFIX,microsoftonline.com,Microsoft
+HOST-SUFFIX,microsofttranslator.com,Microsoft
+HOST-SUFFIX,ms,Microsoft
 HOST-SUFFIX,msappproxy.net,Microsoft
 HOST-SUFFIX,msauth.net,Microsoft
 HOST-SUFFIX,msauthimages.net,Microsoft
 HOST-SUFFIX,msecnd.net,Microsoft
 HOST-SUFFIX,msedge.net,Microsoft
+HOST-SUFFIX,msocdn.com,Mainland
 HOST-SUFFIX,msft.net,Microsoft
 HOST-SUFFIX,msftauth.net,Microsoft
 HOST-SUFFIX,msftauthimages.net,Microsoft
