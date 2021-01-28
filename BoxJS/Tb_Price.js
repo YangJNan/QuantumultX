@@ -1,5 +1,5 @@
 /*
-README：https://github.com/yichahucha/surge/tree/master
+README：https://github.com/YangJNan/QuantumultX/tree/master/BoxJS
  */
 
 const $tool = new Tool()
