@@ -102,7 +102,7 @@ HOST-KEYWORD,bbcfmt,GMedia
 HOST-KEYWORD,uk-live,GMedia
 
 # > DAZN
-USER-AGENT,DAZN*,DAZN
+USER-AGENT,DAZN*,GMedia
 HOST-SUFFIX,d151l6v8er5bdm.cloudfront.net,GMedia
 HOST-SUFFIX,dazn.com,GMedia
 HOST-SUFFIX,dazn-api.com,GMedia
