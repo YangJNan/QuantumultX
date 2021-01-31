@@ -38,6 +38,19 @@ HOST-SUFFIX,steamcommunity.com,Outside
 HOST-SUFFIX,steampowered.com,Outside
 HOST-SUFFIX,steamstatic.com,Outside
 
+# > Twitter
+HOST-SUFFIX,twitter.com,Outside
+HOST-SUFFIX,twitter.jp,Outside
+DOMAIN-SUFFIX,pscp.tv,Outside
+DOMAIN-SUFFIX,periscope.tv,Outside
+DOMAIN-SUFFIX,t.co,Outside
+DOMAIN-SUFFIX,twimg.co,Outside
+DOMAIN-SUFFIX,twimg.com,Outside
+DOMAIN-SUFFIX,twitpic.com,Outside
+DOMAIN-SUFFIX,twitter.com,Outside
+DOMAIN-SUFFIX,twitter.jp,Outside
+DOMAIN-SUFFIX,vine.co,Outside
+
 # > Zooba
 USER-AGENT,battleroyale*,Outside
 
@@ -499,7 +512,6 @@ HOST-SUFFIX,turbobit.net,Outside
 HOST-SUFFIX,tv.com,Outside
 HOST-SUFFIX,tweetdeck.com,Outside
 HOST-SUFFIX,tweetmarker.net,Outside
-HOST-SUFFIX,twimg.co,Outside
 HOST-SUFFIX,twitch.tv,Outside
 HOST-SUFFIX,twitthat.com,Outside
 HOST-SUFFIX,periscope.tv,Outside
@@ -509,8 +521,6 @@ HOST-SUFFIX,twimg.co,Outside
 HOST-SUFFIX,twimg.com,Outside
 HOST-SUFFIX,twimg.org,Outside
 HOST-SUFFIX,twitpic.com,Outside
-HOST-SUFFIX,twitter.com,Outside
-HOST-SUFFIX,twitter.jp,Outside
 HOST-SUFFIX,vine.co,Outside
 HOST-SUFFIX,twtkr.com,Outside
 HOST-SUFFIX,twttr.com,Outside
