@@ -76,7 +76,6 @@ USER-AGENT,%E8%AE%BE%E7%BD%AE*,Apple
 USER-AGENT,*WeatherFoundation*,Apple
 USER-AGENT,*com.apple.mobileme.fmip1,Apple
 USER-AGENT,AppStore*,Apple
-USER-AGENT,AppleNews*,Apple
 USER-AGENT,AppleTV*,Apple
 USER-AGENT,FMDClient*,Apple
 USER-AGENT,FMFD*,Apple
@@ -86,7 +85,6 @@ USER-AGENT,Music*,Apple
 USER-AGENT,TestFlight*,Apple
 USER-AGENT,com.apple.Maps,Apple
 USER-AGENT,com.apple.appstored*,Apple
-USER-AGENT,com.apple.news*,Apple
 USER-AGENT,com.apple.tv*,Apple
 USER-AGENT,fmflocatord*,Apple
 USER-AGENT,locationd*,Apple
