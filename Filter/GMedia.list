@@ -47,23 +47,6 @@ HOST-SUFFIX,primevideo.org,GMedia
 HOST-SUFFIX,primevideo.tv,GMedia
 HOST-KEYWORD,avoddashs,GMedia
 
-# > Apple News and Apple Map TOMTOM Version
-USER-AGENT,AppleNews*,GMedia
-USER-AGENT,com.apple.news*,GMedia
-HOST,gspe1-ssl.ls.apple.com,GMedia
-USER-AGENT,News*,GMedia
-HOST,apple.comscoreresearch.com,GMedia
-HOST,gateway.icloud.com,GMedia
-HOST,news-client.apple.com,GMedia
-HOST,news-edge.apple.com,GMedia
-HOST,news-events.apple.com,GMedia
-HOST,apple.comscoreresearch.com,GMedia
-HOST,news-assets.apple.com,GMedia
-HOST,news-client.apple.com,GMedia
-HOST,news-edge.apple.com,GMedia
-HOST,news-events.apple.com,GMedia
-HOST-SUFFIX,apple.news,GMedia
-
 # > Apple TV
 USER-AGENT,AppleTV*,GMedia
 USER-AGENT,com.apple.tv*,GMedia
