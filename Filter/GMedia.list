@@ -16,37 +16,6 @@ HOST-SUFFIX,akamaized.net,GMedia
 HOST-SUFFIX,ameba.jp,GMedia
 HOST-SUFFIX,hayabusa.io,GMedia
 
-# > Amazon Prime Video
-USER-AGENT,InstantVideo.US*,GMedia
-USER-AGENT,Prime%20Video*,GMedia
-HOST-SUFFIX,aiv-cdn.net,GMedia
-HOST-SUFFIX,amazonaws.co.uk,GMedia
-HOST-SUFFIX,amazonaws.com,GMedia
-HOST-SUFFIX,amazonvideo.com,GMedia
-HOST-SUFFIX,llnwd.net,GMedia
-HOST,d1v5ir2lpwr8os.cloudfront.net,GMedia
-HOST,d22qjgkvxw22r6.cloudfront.net,GMedia
-HOST,d25xi40x97liuc.cloudfront.net,GMedia
-HOST,d27xxe7juh1us6.cloudfront.net,GMedia
-HOST,dmqdd6hw24ucf.cloudfront.net,GMedia
-HOST-SUFFIX,aiv-delivery.net,GMedia
-HOST-SUFFIX,amazonprimevideo.cn,GMedia
-HOST-SUFFIX,amazonprimevideo.com.cn,GMedia
-HOST-SUFFIX,amazonprimevideos.com,GMedia
-HOST-SUFFIX,amazonvideo.cc,GMedia
-HOST-SUFFIX,atv-ps.amazon.com,GMedia
-HOST-SUFFIX,avodmp4s3ww-a.akamaihd.net,GMedia
-HOST-SUFFIX,fls-na.amazon.com,GMedia
-HOST-SUFFIX,llnwd.net,GMedia
-HOST-SUFFIX,media-amazon.com,GMedia
-HOST-SUFFIX,prime-video.com,GMedia
-HOST-SUFFIX,primevideo.cc,GMedia
-HOST-SUFFIX,primevideo.com,GMedia
-HOST-SUFFIX,primevideo.info,GMedia
-HOST-SUFFIX,primevideo.org,GMedia
-HOST-SUFFIX,primevideo.tv,GMedia
-HOST-KEYWORD,avoddashs,GMedia
-
 # > Apple TV
 USER-AGENT,AppleTV*,GMedia
 USER-AGENT,com.apple.tv*,GMedia
