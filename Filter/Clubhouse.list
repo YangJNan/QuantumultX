@@ -1,6 +1,5 @@
 # Clubhouse
 USER-AGENT,Clubhouse*,Clubhouse
-IP-CIDR,52.52.84.170/32,no-resolve,Clubhouse
 DOMAIN-SUFFIX,clubhouseapi.com ,Clubhouse
 DOMAIN-SUFFIX,joinclubhouse.com ,Clubhouse
 DOMAIN,www.clubhouseapi.com,Clubhouse
