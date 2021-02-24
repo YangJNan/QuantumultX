@@ -16,6 +16,11 @@ HOST-SUFFIX,akamaized.net,GMedia
 HOST-SUFFIX,ameba.jp,GMedia
 HOST-SUFFIX,hayabusa.io,GMedia
 
+# > All 4
+USER-AGENT,All4*,GMedia
+DOMAIN-SUFFIX,c4assets.com,GMedia
+DOMAIN-SUFFIX,channel4.com,GMedia
+
 # > Apple TV
 USER-AGENT,AppleTV*,GMedia
 USER-AGENT,com.apple.tv*,GMedia
@@ -73,6 +78,16 @@ HOST-SUFFIX,logx.optimizely.com,GMedia
 HOST-SUFFIX,s.yimg.jp,GMedia
 HOST-SUFFIX,sentry.io,GMedia
 HOST-KEYWORD,voddazn,GMedia
+
+# > Deezer
+USER-AGENT,Deezer*,GMedia
+DOMAIN-SUFFIX,deezer.com,GMedia
+DOMAIN-SUFFIX,dzcdn.net,GMedia
+
+# > DMM
+DOMAIN-SUFFIX,dmm.co.jp,GMedia
+DOMAIN-SUFFIX,dmm.com,GMedia
+DOMAIN-SUFFIX,dmm-extension.com,GMedia
 
 # > encoreTVB
 USER-AGENT,encoreTVB*,GMedia
@@ -351,6 +366,15 @@ HOST-SUFFIX,akamaized.net,GMedia
 HOST-SUFFIX,foxplus.com,GMedia
 HOST-SUFFIX,theplatform.com,GMedia
 
+# > 华文电视
+USER-AGENT,HWTVMobile*,GMedia
+DOMAIN-SUFFIX,5itv.tv,GMedia
+DOMAIN-SUFFIX,ocnttv.com,GMedia
+
+# > Himalaya
+USER-AGENT,Himalaya*,GMedia
+DOMAIN-SUFFIX,himalaya.com,GMedia
+
 # > Hulu(フールー)
 HOST-SUFFIX,happyon.jp,GMedia
 HOST-SUFFIX,hulu.jp,GMedia
@@ -411,6 +435,12 @@ HOST-SUFFIX,registerhulu.com,GMedia
 HOST-SUFFIX,thehulubraintrust.com,GMedia
 HOST-SUFFIX,wwwhuluplus.com,GMedia
 
+# > ITV
+USER-AGENT,ITV_Player*,GMedia
+DOMAIN-SUFFIX,itv.com,GMedia
+DOMAIN-SUFFIX,itvstatic.com,GMedia
+DOMAIN,itvpnpmobile-a.akamaihd.net,GMedia
+
 # > Japonx
 HOST-KEYWORD,japonx,GMedia
 HOST-KEYWORD,japronx,GMedia
@@ -459,10 +489,31 @@ HOST-SUFFIX,chocotv.com.tw,GMedia
 HOST-SUFFIX,line-cdn.net,GMedia
 HOST-SUFFIX,line-scdn.net,GMedia
 
+# > LiTV
+DOMAIN-SUFFIX,litv.tv,GMedia
+DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,GMedia
+
+# > My5
+USER-AGENT,My5*,GMedia
+DOMAIN-SUFFIX,channel5.com,GMedia
+DOMAIN-SUFFIX,my5.tv,GMedia
+DOMAIN,d349g9zuie06uo.cloudfront.net,GMedia
+
 # > myTV_SUPER
 USER-AGENT,mytv*,GMedia
 HOST-SUFFIX,mytvsuper.com,GMedia
 HOST-SUFFIX,tvb.com,GMedia
+
+# > Naver TV
+USER-AGENT,Naver%20TV*,GMedia
+DOMAIN-SUFFIX,naver.com,GMedia
+DOMAIN-SUFFIX,smartmediarep.com,GMedia
+
+# > niconico
+USER-AGENT,Niconico*,GMedia
+DOMAIN-SUFFIX,dmc.nico,GMedia
+DOMAIN-SUFFIX,nicovideo.jp,GMedia
+DOMAIN-SUFFIX,nimg.jp,GMedia
 
 # > Pandora
 USER-AGENT,Pandora*,GMedia
@@ -478,6 +529,26 @@ USER-AGENT,SoundCloud*,GMedia
 HOST-SUFFIX,p-cdn.us,GMedia
 HOST-SUFFIX,sndcdn.com,GMedia
 HOST-SUFFIX,soundcloud.com,GMedia
+
+# > 台湾好
+USER-AGENT,TaiwanGood*,GMedia
+DOMAIN-SUFFIX,skyking.com.tw,GMedia
+DOMAIN,hamifans.emome.net,GMedia
+
+# > TIDAL
+USER-AGENT,TIDAL*,GMedia
+DOMAIN-SUFFIX,tidal.com,GMedia
+
+# > TVer
+USER-AGENT,TVer-Release*,GMedia
+DOMAIN-SUFFIX,tver.jp,GMedia
+DOMAIN,edge.api.brightcove.com,GMedia
+
+# > Twitch
+DOMAIN-SUFFIX,jtvnw.net,GMedia
+DOMAIN-SUFFIX,ttvnw.net,GMedia
+DOMAIN-SUFFIX,twitch.tv,GMedia
+DOMAIN-SUFFIX,twitchcdn.net,GMedia
 
 # > ViuTV
 USER-AGENT,Viu*,GMedia
