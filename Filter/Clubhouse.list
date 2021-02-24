@@ -8,6 +8,8 @@ DOMAIN,clubhouseprod.s3.amazonaws.com,Clubhouse
 DOMAIN,clubhouse.pubnub.com,Clubhouse
 DOMAIN,maintenance.joinclubhouse.com,Clubhouse
 DOMAIN-KEYWORD,clubhouse,Clubhouse
+HOST,clubhouse.pubnub.com,Clubhouse
+HOST,clubhouseprod.s3.amazonaws.com,Clubhouse
 HOST, ap-oversea-tls.agora.io, Clubhouse
 HOST, ap-oversea.agora.io, Clubhouse
 HOST, ap-oversea2.agora.io, Clubhouse
@@ -17,6 +19,7 @@ IP-CIDR, 13.230.60.35/32, Clubhouse
 IP-CIDR, 23.248.191.103/32, Clubhouse
 IP-CIDR, 23.248.191.105/32, Clubhouse
 IP-CIDR, 23.98.43.152/32, Clubhouse
+IP-CIDR, 35.168.106.53/32,Clubhouse
 IP-CIDR, 35.178.208.187/32, Clubhouse
 IP-CIDR, 45.40.48.11/32, Clubhouse
 IP-CIDR, 45.255.124.98/32, Clubhouse
@@ -31,22 +34,32 @@ IP-CIDR, 45.255.124.135/32, Clubhouse
 IP-CIDR, 50.17.126.121/32, Clubhouse
 IP-CIDR, 52.52.84.170/32, Clubhouse
 IP-CIDR, 52.58.56.244/32, Clubhouse
+IP-CIDR, 52.178.26.110/32,Clubhouse
 IP-CIDR, 52.194.158.59/32, Clubhouse
 IP-CIDR, 52.221.46.208/32, Clubhouse
 IP-CIDR, 54.178.26.110/32, Clubhouse
 IP-CIDR, 69.28.51.148/32, Clubhouse
-IP-CIDR, 103.59.49.10/32, Clubhouse
-IP-CIDR, 103.65.41.166/32, Clubhouse
-IP-CIDR, 103.65.41.169/32, Clubhouse
-IP-CIDR, 103.98.18.181/32, Clubhouse
-IP-CIDR, 103.98.18.183/32, Clubhouse
-IP-CIDR, 103.98.18.184/32, Clubhouse
-IP-CIDR, 103.98.18.189/32, Clubhouse
+IP-CIDR,103.65.41.137/32,Clubhouse
+IP-CIDR,103.65.41.139/32,Clubhouse
+IP-CIDR,103.65.41.157/32,Clubhouse
+IP-CIDR,103.65.41.159/32,Clubhouse
+IP-CIDR,103.65.41.166/32,Clubhouse
+IP-CIDR,103.65.41.169/32,Clubhouse
+IP-CIDR,103.98.18.181/32,Clubhouse
+IP-CIDR,103.98.18.183/32,Clubhouse
+IP-CIDR,103.98.18.184/32,Clubhouse
+IP-CIDR,103.98.18.189/32,Clubhouse
 IP-CIDR, 120.227.115.126/32, Clubhouse
 IP-CIDR, 122.10.255.165/32, Clubhouse
 IP-CIDR, 128.1.87.196/32, Clubhouse
-IP-CIDR, 129.227.71.203/32, Clubhouse
-IP-CIDR, 129.227.115.130/32, Clubhouse
+IP-CIDR,129.227.115.130/32,Clubhouse
+IP-CIDR,129.227.57.130/32,Clubhouse
+IP-CIDR,129.227.57.135/32,Clubhouse
+IP-CIDR,129.227.57.136/32,Clubhouse
+IP-CIDR,129.227.57.138/32,Clubhouse
+IP-CIDR,129.227.57.144/32,Clubhouse
+IP-CIDR,129.227.57.146/31,Clubhouse
+IP-CIDR,129.227.71.203/32,Clubhouse
 IP-CIDR, 148.153.126.146/32, Clubhouse
 IP-CIDR, 148.153.172.73/32, Clubhouse
 IP-CIDR, 148.153.172.74/32, Clubhouse
