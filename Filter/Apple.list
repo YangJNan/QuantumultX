@@ -69,7 +69,6 @@ HOST-SUFFIX,www.apple.com.edgekey.net,Apple
 HOST-SUFFIX,wwwicloud.com,Apple
 HOST-KEYWORD,apple.com.akadns.net,Apple
 HOST-KEYWORD,icloud.com.akadns.net,Apple
-HOST-KEYWORD,testflight,Apple
 USER-AGENT,%E5%9C%B0%E5%9B%BE*,Apple
 USER-AGENT,%E6%9F%A5%E6%89%BE*,Apple
 USER-AGENT,%E8%AE%BE%E7%BD%AE*,Apple
@@ -82,7 +81,6 @@ USER-AGENT,FMFD*,Apple
 USER-AGENT,FindMy*,Apple
 USER-AGENT,Maps*,Apple
 USER-AGENT,Music*,Apple
-USER-AGENT,TestFlight*,Apple
 USER-AGENT,com.apple.Maps,Apple
 USER-AGENT,com.apple.appstored*,Apple
 USER-AGENT,com.apple.tv*,Apple
