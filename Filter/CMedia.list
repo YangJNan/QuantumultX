@@ -53,6 +53,15 @@ HOST-SUFFIX,upos-hz-mirrorakam.akamaized.net,CMedia
 HOST-SUFFIX,uposdash-302-bilivideo.yfcdn.net,CMedia
 HOST-SUFFIX,yo9.com,CMedia
 
+# > China Music Corp
+DOMAIN-SUFFIX,kuwo.cn,CMedia
+DOMAIN-SUFFIX,kugou.com,CMedia
+
+# > HunanTV
+DOMAIN-SUFFIX,hitv.com,CMedia
+DOMAIN-SUFFIX,hunantv.com,CMedia
+DOMAIN-SUFFIX,mgtv.com,CMedia
+
 # > iQiyi
 USER-AGENT,QIYI*,CMedia
 USER-AGENT,iQiYi*,CMedia
@@ -255,12 +264,31 @@ IP-CIDR,59.111.181.35/32,CMedia
 IP-CIDR,59.111.181.38/32,CMedia
 IP-CIDR,59.111.181.60/32,CMedia
 
+# > PPLive
+DOMAIN-SUFFIX,pplive.cn,CMedia
+DOMAIN-SUFFIX,pptv.com,CMedia
+
 # > QQMusic
 USER-AGENT,QQ%e9%9f%b3%e4%b9%90*,CMedia
 USER-AGENT,QQMusic*,CMedia
 HOST-SUFFIX,*music.qq.com,CMedia
 HOST-SUFFIX,y.qq.com,CMedia
 HOST,aqqmusic.tc.qq.com,CMedia
+DOMAIN-SUFFIX,music.qq.com,CMedia
+DOMAIN-SUFFIX,music.tc.qq.com,CMedia
+DOMAIN-SUFFIX,qqmusic.qq.com,CMedia
+DOMAIN-SUFFIX,tencentmusic.com,CMedia
+DOMAIN-SUFFIX,y.qq.com,CMedia
+DOMAIN,aqqmusic.tc.qq.com,CMedia
+DOMAIN,moo.qq.com,CMedia
+
+# > Qianqian Music
+DOMAIN-SUFFIX,qianqian.com,CMedia
+DOMAIN-SUFFIX,taihe.com,CMedia
+
+# > Sohu Video
+DOMAIN-SUFFIX,itc.cn,CMedia
+DOMAIN-SUFFIX,sohu.com,CMedia
 
 # > Tencent Video
 USER-AGENT,live4iphone*,CMedia
@@ -268,6 +296,10 @@ USER-AGENT,qqlive4iphone*,CMedia
 USER-AGENT,TencentMidasConnect*,CMedia
 HOST-SUFFIX,v.qq.com,CMedia
 HOST-SUFFIX,video.qq.com,CMedia
+
+# > XiGua
+DOMAIN-SUFFIX,ixigua.com,CMedia
+DOMAIN-SUFFIX,snssdk.com,CMedia
 
 # > Xiami Music
 USER-AGENT,walkman*,CMedia
