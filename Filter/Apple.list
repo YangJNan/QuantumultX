@@ -1,6 +1,8 @@
 # > Apple
 HOST,api.smoot.apple.cn,Apple
 HOST,apple.comscoreresearch.com,Apple
+HOST,beta.apple.com,Apple
+HOST,testflight.apple.com,Apple
 HOST-SUFFIX,aaplimg.com,Apple
 HOST-SUFFIX,akadns.net,Apple
 HOST-SUFFIX,apple-cloudkit.com,Apple
@@ -69,6 +71,7 @@ HOST-SUFFIX,www.apple.com.edgekey.net,Apple
 HOST-SUFFIX,wwwicloud.com,Apple
 HOST-KEYWORD,apple.com.akadns.net,Apple
 HOST-KEYWORD,icloud.com.akadns.net,Apple
+HOST-KEYWORD,testflight,Apple
 USER-AGENT,%E5%9C%B0%E5%9B%BE*,Apple
 USER-AGENT,%E6%9F%A5%E6%89%BE*,Apple
 USER-AGENT,%E8%AE%BE%E7%BD%AE*,Apple
