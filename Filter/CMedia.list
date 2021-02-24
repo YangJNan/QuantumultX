@@ -299,7 +299,6 @@ HOST-SUFFIX,video.qq.com,CMedia
 
 # > XiGua
 DOMAIN-SUFFIX,ixigua.com,CMedia
-DOMAIN-SUFFIX,snssdk.com,CMedia
 
 # > Xiami Music
 USER-AGENT,walkman*,CMedia
