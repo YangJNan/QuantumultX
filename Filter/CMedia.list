@@ -62,16 +62,6 @@ DOMAIN-SUFFIX,hitv.com,CMedia
 DOMAIN-SUFFIX,hunantv.com,CMedia
 DOMAIN-SUFFIX,mgtv.com,CMedia
 
-# > iQiyi
-USER-AGENT,QIYI*,CMedia
-USER-AGENT,iQiYi*,CMedia
-USER-AGENT,PPStream*,CMedia
-USER-AGENT,QYPlayer*,CMedia
-HOST-SUFFIX,iqiyi.com,CMedia
-HOST-SUFFIX,iqiyipic.com,CMedia
-HOST-SUFFIX,qy.net,CMedia
-HOST-SUFFIX,71.am,CMedia
-
 # > Kugou & Kuwo
 USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*,CMedia
 HOST-SUFFIX,2496.cn,CMedia
