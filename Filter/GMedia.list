@@ -172,11 +172,6 @@ DOMAIN-SUFFIX,channel5.com,GMedia
 DOMAIN-SUFFIX,my5.tv,GMedia
 DOMAIN,d349g9zuie06uo.cloudfront.net,GMedia
 
-# > myTV_SUPER
-USER-AGENT,mytv*,GMedia
-HOST-SUFFIX,mytvsuper.com,GMedia
-HOST-SUFFIX,tvb.com,GMedia
-
 # > Naver TV
 USER-AGENT,Naver%20TV*,GMedia
 DOMAIN-SUFFIX,naver.com,GMedia
