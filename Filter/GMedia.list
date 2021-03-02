@@ -535,10 +535,6 @@ USER-AGENT,TaiwanGood*,GMedia
 DOMAIN-SUFFIX,skyking.com.tw,GMedia
 DOMAIN,hamifans.emome.net,GMedia
 
-# > TIDAL
-USER-AGENT,TIDAL*,GMedia
-DOMAIN-SUFFIX,tidal.com,GMedia
-
 # > TVer
 USER-AGENT,TVer-Release*,GMedia
 DOMAIN-SUFFIX,tver.jp,GMedia
