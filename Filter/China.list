@@ -17,6 +17,12 @@ HOST,steamcommunity-a.akamaihd.net,China
 HOST-SUFFIX,10010.com,China
 HOST-SUFFIX,10089.cn,China
 HOST-SUFFIX,115.com,China
+HOST-SUFFIX,115cdn.com,China
+HOST-SUFFIX,115cdn.net,China
+HOST-SUFFIX,115img.com,China
+HOST-SUFFIX,116cd.cn,China
+HOST-SUFFIX,116cd.com,China
+HOST-SUFFIX,116cd.net,China
 HOST-SUFFIX,12306.cn,China
 HOST-SUFFIX,12306.com,China
 HOST-SUFFIX,126.com,China
@@ -70,6 +76,7 @@ HOST-SUFFIX,alphassl.com,China
 HOST-SUFFIX,amap.com,China
 HOST-SUFFIX,amd.com,China
 HOST-SUFFIX,ams.org,China
+HOST-SUFFIX,anxia.com,China
 HOST-SUFFIX,animebytes.tv,China
 HOST-SUFFIX,animetorrents.me,China
 HOST-SUFFIX,annualreviews.org,China
@@ -499,6 +506,7 @@ HOST-SUFFIX,soku.com,China
 HOST-SUFFIX,sony.com,China
 HOST-SUFFIX,sonyentertainmentnetwork.com,China
 HOST-SUFFIX,soso.com,China
+HOST-SUFFIX,sq.cc,China
 HOST-SUFFIX,speedtest.net,China
 HOST-SUFFIX,spiedigitallibrary.org,China
 HOST-SUFFIX,springer.com,China
