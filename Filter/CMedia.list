@@ -282,10 +282,14 @@ DOMAIN-SUFFIX,sohu.com,CMedia
 
 # > Tencent Video
 USER-AGENT,live4iphone*,CMedia
+USER-AGENT,MOO*,CMedia
 USER-AGENT,qqlive4iphone*,CMedia
 USER-AGENT,TencentMidasConnect*,CMedia
 HOST-SUFFIX,v.qq.com,CMedia
 HOST-SUFFIX,video.qq.com,CMedia
+HOST-SUFFIX,mfm.video.qq.com,CMedia
+HOST-SUFFIX,v.smtcdns.com,CMedia
+HOST-SUFFIX,vv.video.qq.com,CMedia
 
 # > XiGua
 DOMAIN-SUFFIX,ixigua.com,CMedia
