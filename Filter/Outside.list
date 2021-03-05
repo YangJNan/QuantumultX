@@ -229,7 +229,6 @@ HOST-SUFFIX,getpricetag.com,Outside
 HOST-SUFFIX,gfw.press,Outside
 HOST-SUFFIX,ggpht.com,Outside
 HOST-SUFFIX,ghostnoteapp.com,Outside
-HOST-SUFFIX,git.io,Outside
 HOST-SUFFIX,gitbook.com,Outside
 HOST-SUFFIX,globalsign.com,Outside
 HOST-SUFFIX,gmocloud.com,Outside
@@ -267,6 +266,8 @@ HOST-SUFFIX,imore.com,Outside
 HOST-SUFFIX,inoreader.com,Outside
 HOST-SUFFIX,ingress.com,Outside
 HOST-SUFFIX,insder.co,Outside
+HOST-SUFFIX,cdninstagram.com,Outside
+HOST-SUFFIX,instagram.com,Outside
 HOST-SUFFIX,instapaper.com,Outside
 HOST-SUFFIX,instructables.com,Outside
 HOST-SUFFIX,io.io,Outside
@@ -640,7 +641,6 @@ HOST-KEYWORD,beetalk,Outside
 HOST-KEYWORD,blogspot,Outside
 HOST-KEYWORD,dropbox,Outside
 HOST-KEYWORD,facebook,Outside
-HOST-KEYWORD,github,Outside
 HOST-KEYWORD,instagram,Outside
 HOST-KEYWORD,twitter,Outside
 HOST-KEYWORD,whatsapp,Outside
@@ -678,7 +678,6 @@ HOST-SUFFIX,messenger.com,Outside
 HOST-SUFFIX,netmarble.com,Outside
 HOST-SUFFIX,nianticlabs.com,Outside
 HOST-SUFFIX,pinimg.com,Outside
-HOST-SUFFIX,pubnub.com,Outside
 HOST-SUFFIX,scdn.co,Outside
 HOST-SUFFIX,t.co,Outside
 HOST-SUFFIX,tensorflow.org,Outside
@@ -712,6 +711,31 @@ IP-CIDR,74.119.76.0/22,Outside
 # > Google
 IP-CIDR,173.194.0.0/16,Outside
 IP-CIDR,74.125.0.0/16,Outside
+
+# > Github
+HOST-SUFFIX,atom.io,Outside
+HOST-SUFFIX,dependabot.com,Outside
+HOST-SUFFIX,ghcr.io,Outside
+HOST-SUFFIX,git.io,Outside
+HOST-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net,Outside
+HOST-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com,Outside
+HOST-SUFFIX,github.blog,Outside
+HOST-SUFFIX,github.com,Outside
+HOST-SUFFIX,github.community,Outside
+HOST-SUFFIX,github.dev,Outside
+HOST-SUFFIX,github.io,Outside
+HOST-SUFFIX,githubapp.com,Outside
+HOST-SUFFIX,githubassets.com,Outside
+HOST-SUFFIX,githubhackathon.com,Outside
+HOST-SUFFIX,githubstatus.com,Outside
+HOST-SUFFIX,githubuniverse.com,Outside
+HOST-SUFFIX,githubusercontent.com,Outside
+HOST-SUFFIX,npm.community,Outside
+HOST-SUFFIX,npmjs.com,Outside
+HOST-SUFFIX,npmjs.org,Outside
+HOST-SUFFIX,rawgit.com,Outside
+HOST-SUFFIX,rawgithub.com,Outside
+HOST-KEYWORD,github,Outside
 
 # > Kakao Talk
 IP-CIDR,1.201.0.0/24,Outside
