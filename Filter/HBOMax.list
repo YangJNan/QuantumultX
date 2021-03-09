@@ -30,6 +30,8 @@ HOST-SUFFIX,nowe.com,HBOMax
 HOST-SUFFIX,players.brightcove.net,HBOMax
 HOST-SUFFIX,s3-ap-southeast-1.amazonaws.com,HBOMax
 HOST-SUFFIX,youboranqs01.com,HBOMax
+HOST-SUFFIX,cmaf.cf.us.hbomaxcdn.com,HBOMax
+HOST-SUFFIX,cmaf.lv3.us.hbomaxcdn.com,HBOMax
 DOMAIN-SUFFIX,hbo.com,HBOMax
 DOMAIN-SUFFIX,hbogo.com,HBOMax
 DOMAIN-SUFFIX,hbonow.com,HBOMax
