@@ -1,325 +1,285 @@
-/*
-README：https://github.com/YangJNan/QuantumultX/tree/master/BoxJS
- */
-
+const version = '0.0.0.5';
 const path1 = "serverConfig";
 const path2 = "wareBusiness";
 const path3 = "basicConfig";
-const consolelog = false;
 const url = $request.url;
 const body = $response.body;
+let now = 0;
 const $tool = tool();
 
-if (url.indexOf(path1) != -1) {
-    let obj = JSON.parse(body);
-    delete obj.serverConfig.httpdns;
-    delete obj.serverConfig.dnsvip;
-    delete obj.serverConfig.dnsvip_v6;
-    $done({ body: JSON.stringify(obj) });
+Array.prototype.insert = function (index, item) {
+  this.splice(index, 0, item);
+};
+
+if (url.indexOf(path1) !== -1) {
+  let obj = JSON.parse(body);
+  delete obj.serverConfig.httpdns;
+  delete obj.serverConfig.dnsvip;
+  delete obj.serverConfig.dnsvip_v6;
+  $done({body: JSON.stringify(obj)});
 }
 
-if (url.indexOf(path3) != -1) {
-    let obj = JSON.parse(body);
-    let JDHttpToolKit = obj.data.JDHttpToolKit;
-    if (JDHttpToolKit) {
-        delete obj.data.JDHttpToolKit.httpdns;
-        delete obj.data.JDHttpToolKit.dnsvipV6;
-    }
-    $done({ body: JSON.stringify(obj) });
+if (url.indexOf(path3) !== -1) {
+  let obj = JSON.parse(body);
+  let JDHttpToolKit = obj.data.JDHttpToolKit;
+  if (JDHttpToolKit) {
+    delete obj.data.JDHttpToolKit.httpdns;
+    delete obj.data.JDHttpToolKit.dnsvipV6;
+  }
+  $done({body: JSON.stringify(obj)});
 }
 
-if (url.indexOf(path2) != -1) {
-    let obj = JSON.parse(body);
-    const floors = obj.floors;
-    const commodity_info = floors[floors.length - 1];
-    const shareUrl = commodity_info.data.property.shareUrl;
-    request_history_price(shareUrl, function (data) {
-        if (data) {
-            const lowerword = adword_obj();
-            lowerword.data.ad.textColor = "#fe0000";
-            let bestIndex = 0;
-            for (let index = 0; index < floors.length; index++) {
-                const element = floors[index];
-                if (element.mId == lowerword.mId) {
-                    bestIndex = index + 1;
-                    break;
-                } else {
-                    if (element.sortId > lowerword.sortId) {
-                        bestIndex = index;
-                        break;
-                    }
-                }
-            }
-            if (data.ok == 1 && data.single) {
-                const lower = lowerMsgs(data.single)
-                const detail = priceSummary(data)
-                const tip = data.PriceRemark.Tip + "（仅供参考）"
-                lowerword.data.ad.adword = `${lower} ${tip}\n${detail}`;
-                floors.insert(bestIndex, lowerword);
-            }
-            if (data.ok == 0 && data.msg.length > 0) {
-                lowerword.data.ad.adword = "⚠️ " + data.msg;
-                floors.insert(bestIndex, lowerword);
-            }
-            $done({ body: JSON.stringify(obj) });
+if (url.indexOf(path2) !== -1) {
+  if (Math.ceil(Math.random() * 4) === 1) {
+    // 25%几率检查更新
+    $tool.get({url: "https://raw.githubusercontent.com/JDHelloWorld/jd_price/main/version.log"}, (err, resp, data) => {
+      let latest = data.split('\n')[0]
+      let msg = data.split('\n')[1]
+      if (version !== latest) {
+        $tool.notify('请更新！', `最新：${latest}  Github:JDHelloWorld`, `更新内容${msg}`,)
+        $done({body});
+        return false
+      } else {
+        showHistory()
+      }
+    })
+  } else {
+    // 直接运行
+    showHistory()
+  }
+}
+
+function showHistory() {
+  let obj = JSON.parse(body);
+  const floors = obj.floors;
+  const commodity_info = floors[floors.length - 1];
+  const shareUrl = commodity_info.data.property.shareUrl;
+  // 当前价格
+  if (commodity_info.data.otherUseBannerInfo)
+    now = parseFloat(commodity_info.data.otherUseBannerInfo.bannerPrice.replace('¥', ''));
+  else
+    now = parseFloat(commodity_info.data.priceInfo.jprice)
+  request_history_price(shareUrl, data => {
+    if (data) {
+      const lowerword = adword_obj();
+      lowerword.data.ad.textColor = "#fe0000";
+      let bestIndex = 0;
+      for (let index = 0; index < floors.length; index++) {
+        const element = floors[index];
+        if (element.mId === lowerword.mId) {
+          bestIndex = index + 1;
+          break;
         } else {
-            $done({ body });
+          if (element.sortId > lowerword.sortId) {
+            bestIndex = index;
+            break;
+          }
         }
-    })
-}
+      }
 
-function lowerMsgs(data) {
-    const lower = data.lowerPriceyh
-    const lowerDate = dateFormat(data.lowerDateyh)
-    const lowerMsg = "〽️历史最低到手价：¥" + String(lower) + ` (${lowerDate}) `
-    return lowerMsg
-}
+      // 成功
+      if (data.ok === 1) {
+        lowerword.data.ad.adword = data.text;
+        floors.insert(bestIndex, lowerword);
+      }
 
-function priceSummary(data) {
-    let summary = ""
-    let listPriceDetail = data.PriceRemark.ListPriceDetail
-    listPriceDetail.pop()
-    let list = listPriceDetail.concat(historySummary(data.single))
-    list.forEach((item, index) => {
-        if (item.Name == "双11价格") {
-            item.Name = "双十一价格"
-        } else if (item.Name == "618价格") {
-            item.Name = "六一八价格"
-        } else if (item.Name == "30天最低价") {
-            item.Name = "三十天最低"
-        }
-        summary += `\n${item.Name}${getSpace(8)}${item.Price}${getSpace(8)}${item.Date}${getSpace(8)}${item.Difference}`
-    })
-    return summary
-}
-
-function historySummary(single) {
-    const rexMatch = /\[.*?\]/g;
-    const rexExec = /\[(.*),(.*),"(.*)".*\]/;
-    let currentPrice, lowest60, lowest180, lowest360
-    let list = single.jiagequshiyh.match(rexMatch);
-    list = list.reverse().slice(0, 360);
-    list.forEach((item, index) => {
-        if (item.length > 0) {
-            const result = rexExec.exec(item);
-            const dateUTC = new Date(eval(result[1]));
-            const date = dateUTC.format("yyyy-MM-dd");
-            let price = parseFloat(result[2]);
-            if (index == 0) {
-                currentPrice = price
-                lowest60 = { Name: "六十天最低", Price: `¥${String(price)}`, Date: date, Difference: difference(currentPrice, price), price }
-                lowest180 = { Name: "一百八最低", Price: `¥${String(price)}`, Date: date, Difference: difference(currentPrice, price), price }
-                lowest360 = { Name: "三百六最低", Price: `¥${String(price)}`, Date: date, Difference: difference(currentPrice, price), price }
-            }
-            if (index < 60 && price <= lowest60.price) {
-                lowest60.price = price
-                lowest60.Price = `¥${String(price)}`
-                lowest60.Date = date
-                lowest60.Difference = difference(currentPrice, price)
-            }
-            if (index < 180 && price <= lowest180.price) {
-                lowest180.price = price
-                lowest180.Price = `¥${String(price)}`
-                lowest180.Date = date
-                lowest180.Difference = difference(currentPrice, price)
-            }
-            if (index < 360 && price <= lowest360.price) {
-                lowest360.price = price
-                lowest360.Price = `¥${String(price)}`
-                lowest360.Date = date
-                lowest360.Difference = difference(currentPrice, price)
-            }
-        }
-    });
-    return [lowest60, lowest180, lowest360];
-}
-
-function difference(currentPrice, price) {
-    let difference = sub(currentPrice, price)
-    if (difference == 0) {
-        return "-"
+      // 失败
+      if (data.ok === 0) {
+        lowerword.data.ad.adword = "⚠️ " + "失败！";
+        floors.insert(bestIndex, lowerword);
+      }
+      $done({body: JSON.stringify(obj)});
     } else {
-        return `${difference > 0 ? "↑" : "↓"}${String(difference)}`
+      $done({body});
     }
-}
-
-function sub(arg1, arg2) {
-    return add(arg1, -Number(arg2), arguments[2]);
-}
-
-function add(arg1, arg2) {
-    arg1 = arg1.toString(), arg2 = arg2.toString();
-    var arg1Arr = arg1.split("."), arg2Arr = arg2.split("."), d1 = arg1Arr.length == 2 ? arg1Arr[1] : "", d2 = arg2Arr.length == 2 ? arg2Arr[1] : "";
-    var maxLen = Math.max(d1.length, d2.length);
-    var m = Math.pow(10, maxLen);
-    var result = Number(((arg1 * m + arg2 * m) / m).toFixed(maxLen));
-    var d = arguments[2];
-    return typeof d === "number" ? Number((result).toFixed(d)) : result;
+  })
 }
 
 function request_history_price(share_url, callback) {
-    const options = {
-        url: "https://apapia-history.manmanbuy.com/ChromeWidgetServices/WidgetServices.ashx",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded;charset=utf-8",
-            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 - mmbWebBrowse - ios"
-        },
-        body: "methodName=getHistoryTrend&p_url=" + encodeURIComponent(share_url)
+  let id = share_url.match(/product\/(.*)\./)[1]
+  let share = `https://item.jd.com/${id}.html`
+  $tool.get({
+    url: `https://m.gwdang.com/trend/data_new?opt=trend&dp_id=${id}-3&search_url=${encodeURIComponent(share)}&from=m&period=360`,
+    headers: {
+      'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
     }
-    $tool.post(options, function (error, response, data) {
-        if (!error) {
-            callback(JSON.parse(data));
-            if (consolelog) console.log("Data:\n" + data);
-        } else {
-            callback(null, null);
-            if (consolelog) console.log("Error:\n" + error);
+  }, (error, response, data) => {
+    if (!error) {
+      data = JSON.parse(data).data
+
+      // 历史最高、低
+      let history = {
+        max: data['series'][0]['max'] / 100,
+        maxt: time(data['series'][0]['max_stamp'] * 1000),
+        min: data['series'][0]['min'] / 100,
+        mint: time(data['series'][0]['min_stamp'] * 1000)
+      };
+
+      let priceList = data['series'][0]['data'];
+      let price30 = {price: 99999999.00, text: ""};
+      let before618 = 0, after618 = 0, before11 = 0, after11 = 0;
+
+      for (let j of priceList) {
+        let stamp = j['x'] * 1000;
+        let day = time(stamp).split(' ')[0];
+        let price = j['y'] / 100;
+
+        // 618
+        if (stamp <= 1592409600000) before618 = price
+        if (stamp >= 1592409600000 && after618 === 0) after618 = price
+
+        // 双十一
+        if (stamp < 1605024000000) before11 = price
+        if (stamp > 1605024000000 && after11 === 0) after11 = price
+
+        // 30天内
+        if (dayDiff(day) < 31 && price <= price30.price) {
+          price30.price = price;
+          price30.text = day;
         }
-    })
-}
+      }
 
-function dateFormat(cellval) {
-    const date = new Date(parseInt(cellval.replace("/Date(", "").replace(")/", ""), 10));
-    const month = date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
-    const currentDate = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
-    return date.getFullYear() + "-" + month + "-" + currentDate;
-}
+      let Jun18 = Math.min(...[before618, after618]);
+      let Nov11 = Math.min(...[before11, after11]);
+      // 去除99999999
+      if (history.min === 99999999.00) history.min = '-';
+      if (price30.price === 99999999.00) price30.price = '-'
 
-function getSpace(length) {
-    let blank = "";
-    for (let index = 0; index < length; index++) {
-        blank += " ";
+      let l1 = `当前价${space(8)}${now}\n`
+      let l2 = `最高价${space(8)}${history.max}${space(8)}${history.maxt}${space(8)}${priceDiff(history.max, now)}\n最低价${space(8)}${history.min}${space(8)}${history.mint}${space(8)}${priceDiff(history.min, now)}\n`
+      let l3 = `六一八${space(8)}${Jun18}${space(8)}2020-06-18${space(8)}${priceDiff(Jun18, now)}\n`
+      let l4 = `双十一${space(8)}${Nov11}${space(8)}2020-11-11${space(8)}${priceDiff(Nov11, now)}\n`
+      let l5 = `三十天${space(8)}${price30.price}${space(8)}${price30.text}${space(8)}${priceDiff(price30.price, now)}`
+      let text = l1 + l2 + l3 + l4 + l5
+
+      callback({ok: 1, text: text});
+
+    } else {
+      callback(null, null);
     }
-    return blank;
+  })
 }
 
 function adword_obj() {
-    return {
-        "bId": "eCustom_flo_199",
-        "cf": {
-            "bgc": "#ffffff",
-            "spl": "empty"
-        },
-        "data": {
-            "ad": {
-                "adword": "",
-                "textColor": "#8C8C8C",
-                "color": "#f23030",
-                "newALContent": true,
-                "hasFold": true,
-                "class": "com.jd.app.server.warecoresoa.domain.AdWordInfo.AdWordInfo",
-                "adLinkContent": "",
-                "adLink": ""
-            }
-        },
-        "mId": "bpAdword",
-        "refId": "eAdword_0000000028",
-        "sortId": 13
-    }
+  return {
+    "bId": "eCustom_flo_199",
+    "cf": {
+      "bgc": "#ffffff",
+      "spl": "empty"
+    },
+    "data": {
+      "ad": {
+        "adword": "",
+        "textColor": "#8C8C8C",
+        "color": "#f23030",
+        "text-align": "justify",
+        "word-break": "break-all",
+        "newALContent": true,
+        "hasFold": true,
+        "class": "com.jd.app.server.warecoresoa.domain.AdWordInfo.AdWordInfo",
+        "adLinkContent": "",
+        "adLink": ""
+      }
+    },
+    "mId": "bpAdword",
+    "refId": "eAdword_0000000028",
+    "sortId": 13
+  }
+}
+
+function time(time = +new Date()) {
+  let date = new Date(time + 8 * 3600 * 1000);
+  return date.toJSON().substr(0, 19).replace('T', ' ').split(' ')[0].replace(/\./g, '-');
+}
+
+function dayDiff(date) {
+  return parseInt((new Date() - new Date(date)) / (1000 * 60 * 60 * 24) + '')
+}
+
+function priceDiff(old, now) {
+  let diff = old - now;
+  if (diff === 0)
+    return '-'
+  return diff > 0 ? `⬇️${diff.toFixed(2)}` : `⬆️${Math.abs(diff).toFixed(2)}`;
+}
+
+function space(len) {
+  let blank = "";
+  for (let i = 0; i < len; i++) {
+    blank += " ";
+  }
+  return blank;
 }
 
 function tool() {
-    const isSurge = typeof $httpClient != "undefined"
-    const isQuanX = typeof $task != "undefined"
-    const isResponse = typeof $response != "undefined"
-    const node = (() => {
-        if (typeof require == "function") {
-            const request = require('request')
-            return ({ request })
-        } else {
-            return (null)
-        }
-    })()
-    const notify = (title, subtitle, message) => {
-        if (isQuanX) $notify(title, subtitle, message)
-        if (isSurge) $notification.post(title, subtitle, message)
-        if (node) console.log(JSON.stringify({ title, subtitle, message }));
+  const isSurge = typeof $httpClient != "undefined"
+  const isQuanX = typeof $task != "undefined"
+  const isResponse = typeof $response != "undefined"
+  const node = (() => {
+    if (typeof require == "function") {
+      const request = require('request')
+      return ({request})
+    } else {
+      return (null)
     }
-    const write = (value, key) => {
-        if (isQuanX) return $prefs.setValueForKey(value, key)
-        if (isSurge) return $persistentStore.write(value, key)
+  })()
+  const notify = (title, subtitle, message) => {
+    if (isQuanX) $notify(title, subtitle, message)
+    if (isSurge) $notification.post(title, subtitle, message)
+    if (node) console.log(JSON.stringify({title, subtitle, message}));
+  }
+  const write = (value, key) => {
+    if (isQuanX) return $prefs.setValueForKey(value, key)
+    if (isSurge) return $persistentStore.write(value, key)
+  }
+  const read = (key) => {
+    if (isQuanX) return $prefs.valueForKey(key)
+    if (isSurge) return $persistentStore.read(key)
+  }
+  const adapterStatus = (response) => {
+    if (response) {
+      if (response.status) {
+        response["statusCode"] = response.status
+      } else if (response.statusCode) {
+        response["status"] = response.statusCode
+      }
     }
-    const read = (key) => {
-        if (isQuanX) return $prefs.valueForKey(key)
-        if (isSurge) return $persistentStore.read(key)
+    return response
+  }
+  const get = (options, callback) => {
+    if (isQuanX) {
+      if (typeof options == "string") options = {url: options}
+      options["method"] = "GET"
+      $task.fetch(options).then(response => {
+        callback(null, adapterStatus(response), response.body)
+      }, reason => callback(reason.error, null, null))
     }
-    const adapterStatus = (response) => {
-        if (response) {
-            if (response.status) {
-                response["statusCode"] = response.status
-            } else if (response.statusCode) {
-                response["status"] = response.statusCode
-            }
-        }
-        return response
+    if (isSurge) $httpClient.get(options, (error, response, body) => {
+      callback(error, adapterStatus(response), body)
+    })
+    if (node) {
+      node.request(options, (error, response, body) => {
+        callback(error, adapterStatus(response), body)
+      })
     }
-    const get = (options, callback) => {
-        if (isQuanX) {
-            if (typeof options == "string") options = { url: options }
-            options["method"] = "GET"
-            $task.fetch(options).then(response => {
-                callback(null, adapterStatus(response), response.body)
-            }, reason => callback(reason.error, null, null))
-        }
-        if (isSurge) $httpClient.get(options, (error, response, body) => {
-            callback(error, adapterStatus(response), body)
-        })
-        if (node) {
-            node.request(options, (error, response, body) => {
-                callback(error, adapterStatus(response), body)
-            })
-        }
+  }
+  const post = (options, callback) => {
+    if (isQuanX) {
+      if (typeof options == "string") options = {url: options}
+      options["method"] = "POST"
+      $task.fetch(options).then(response => {
+        callback(null, adapterStatus(response), response.body)
+      }, reason => callback(reason.error, null, null))
     }
-    const post = (options, callback) => {
-        if (isQuanX) {
-            if (typeof options == "string") options = { url: options }
-            options["method"] = "POST"
-            $task.fetch(options).then(response => {
-                callback(null, adapterStatus(response), response.body)
-            }, reason => callback(reason.error, null, null))
-        }
-        if (isSurge) {
-            $httpClient.post(options, (error, response, body) => {
-                callback(error, adapterStatus(response), body)
-            })
-        }
-        if (node) {
-            node.request.post(options, (error, response, body) => {
-                callback(error, adapterStatus(response), body)
-            })
-        }
+    if (isSurge) {
+      $httpClient.post(options, (error, response, body) => {
+        callback(error, adapterStatus(response), body)
+      })
     }
-    return { isQuanX, isSurge, isResponse, notify, write, read, get, post }
-}
-
-Array.prototype.insert = function (index, item) {
-    this.splice(index, 0, item);
-};
-
-Date.prototype.format = function (fmt) {
-    var o = {
-        "y+": this.getFullYear(),
-        "M+": this.getMonth() + 1,
-        "d+": this.getDate(),
-        "h+": this.getHours(),
-        "m+": this.getMinutes(),
-        "s+": this.getSeconds(),
-        "q+": Math.floor((this.getMonth() + 3) / 3),
-        "S+": this.getMilliseconds()
-    };
-    for (var k in o) {
-        if (new RegExp("(" + k + ")").test(fmt)) {
-            if (k == "y+") {
-                fmt = fmt.replace(RegExp.$1, ("" + o[k]).substr(4 - RegExp.$1.length));
-            }
-            else if (k == "S+") {
-                var lens = RegExp.$1.length;
-                lens = lens == 1 ? 3 : lens;
-                fmt = fmt.replace(RegExp.$1, ("00" + o[k]).substr(("" + o[k]).length - 1, lens));
-            }
-            else {
-                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-            }
-        }
+    if (node) {
+      node.request.post(options, (error, response, body) => {
+        callback(error, adapterStatus(response), body)
+      })
     }
-    return fmt;
-}
+  }
+  return {isQuanX, isSurge, isResponse, notify, write, read, get, post}
