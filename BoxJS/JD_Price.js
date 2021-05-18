@@ -1,3 +1,4 @@
+
 const version = '0.0.0.5';
 const path1 = "serverConfig";
 const path2 = "wareBusiness";
@@ -283,3 +284,4 @@ function tool() {
     }
   }
   return {isQuanX, isSurge, isResponse, notify, write, read, get, post}
+}
