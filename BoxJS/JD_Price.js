@@ -1,5 +1,5 @@
 /*
-README：https://github.com/yichahucha/surge/tree/master
+README：README：https://github.com/YangJNan/QuantumultX/tree/master/BoxJS
  */
 
 const path1 = "serverConfig";
