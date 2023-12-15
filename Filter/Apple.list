@@ -99,3 +99,15 @@ IP-CIDR,198.183.17.0/24,Apple
 IP-CIDR,205.180.175.0/24,Apple
 IP-CIDR,63.92.224.0/19,Apple
 IP-CIDR,65.199.22.0/23,Apple
+
+# > AppleNews
+HOST,apple.comscoreresearch.com,Apple
+HOST,gateway.icloud.com,Apple
+HOST,gspe1-ssl.ls.apple.com,Apple
+HOST,news-assets.apple.com,Apple
+HOST,news-client.apple.com,Apple
+HOST,news-edge.apple.com,Apple
+HOST,news-events.apple.com,Apple
+HOST-SUFFIX,apple.news,Apple
+USER-AGENT,AppleNews*,Apple
+USER-AGENT,com.apple.news*,Apple
