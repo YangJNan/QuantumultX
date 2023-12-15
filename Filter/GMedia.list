@@ -21,6 +21,65 @@ USER-AGENT,All4*,GMedia
 DOMAIN-SUFFIX,c4assets.com,GMedia
 DOMAIN-SUFFIX,channel4.com,GMedia
 
+# > Amazon Prime Video
+USER-AGENT,InstantVideo.US*,GMedia
+USER-AGENT,Prime%20Video*,GMedia
+HOST-SUFFIX,aiv-cdn.net,GMedia
+HOST-SUFFIX,amazonaws.co.uk,GMedia
+HOST-SUFFIX,amazonaws.com,GMedia
+HOST-SUFFIX,amazonvideo.com,GMedia
+HOST-SUFFIX,llnwd.net,GMedia
+HOST,d1v5ir2lpwr8os.cloudfront.net,GMedia
+HOST,d22qjgkvxw22r6.cloudfront.net,GMedia
+HOST,d25xi40x97liuc.cloudfront.net,GMedia
+HOST,d27xxe7juh1us6.cloudfront.net,GMedia
+HOST,dmqdd6hw24ucf.cloudfront.net,GMedia
+HOST,images-na.ssl-images-amazon.com,GMedia
+HOST,static.siege-amazon.com,GMedia
+HOST-SUFFIX,aiv-delivery.net,GMedia
+HOST-SUFFIX,amazonprimevideo.cn,GMedia
+HOST-SUFFIX,amazonprimevideo.com.cn,GMedia
+HOST-SUFFIX,amazonprimevideos.com,GMedia
+HOST-SUFFIX,amazonvideo.cc,GMedia
+HOST-SUFFIX,atv-ps.amazon.com,GMedia
+HOST-SUFFIX,avodmp4s3ww-a.akamaihd.net,GMedia
+HOST-SUFFIX,fls-na.amazon.com,GMedia
+HOST-SUFFIX,llnwd.net,GMedia
+HOST-SUFFIX,media-amazon.com,GMedia
+HOST-SUFFIX,prime-video.com,GMedia
+HOST-SUFFIX,primevideo.cc,GMedia
+HOST-SUFFIX,primevideo.com,GMedia
+HOST-SUFFIX,primevideo.info,GMedia
+HOST-SUFFIX,primevideo.org,GMedia
+HOST-SUFFIX,primevideo.tv,GMedia
+HOST-KEYWORD,avoddashs,GMedia
+HOST-SUFFIX,aiv-cdn.net,GMedia
+HOST-SUFFIX,amazon.co.jp,GMedia
+HOST-SUFFIX,amazon.com,GMedia
+HOST-SUFFIX,amazonaws.co.uk,GMedia
+HOST-SUFFIX,amazonaws.com,GMedia
+HOST-SUFFIX,amazonvideo.com,GMedia
+HOST-SUFFIX,llnwd.net,GMedia
+HOST-SUFFIX,media-amazon.com,GMedia
+HOST-SUFFIX,primevideo.com,GMedia
+USER-AGENT,InstantVideo.US*,GMedia
+USER-AGENT,Prime%20Video*,GMedia
+IP-CIDR,13.32.0.0/15,GMedia
+IP-CIDR,13.35.0.0/17,GMedia
+IP-CIDR,18.184.0.0/15,GMedia
+IP-CIDR,18.194.0.0/15,GMedia
+IP-CIDR,18.208.0.0/13,GMedia
+IP-CIDR,18.232.0.0/14,GMedia
+IP-CIDR,52.200.0.0/13,GMedia
+IP-CIDR,52.58.0.0/15,GMedia
+IP-CIDR,52.74.0.0/16,GMedia
+IP-CIDR,52.77.0.0/16,GMedia
+IP-CIDR,52.84.0.0/15,GMedia
+IP-CIDR,54.156.0.0/14,GMedia
+IP-CIDR,54.226.0.0/15,GMedia
+IP-CIDR,54.230.156.0/22,GMedia
+IP-CIDR,54.93.0.0/16,GMedia
+
 # > Apple TV
 USER-AGENT,AppleTV*,GMedia
 USER-AGENT,com.apple.tv*,GMedia
@@ -58,6 +117,108 @@ HOST-SUFFIX,bbcchinese.com,GMedia
 HOST-KEYWORD,bbcfmt,GMedia
 HOST-KEYWORD,uk-live,GMedia
 
+# Clubhouse
+USER-AGENT,Clubhouse*,GMedia
+DOMAIN-SUFFIX,clubhouseapi.com,GMedia
+DOMAIN-SUFFIX,joinclubhouse.com,GMedia
+DOMAIN,www.clubhouseapi.com,GMedia
+DOMAIN,clubhouseprod.s3.amazonaws.com,GMedia
+DOMAIN,clubhouse.pubnub.com,GMedia
+DOMAIN,maintenance.joinclubhouse.com,GMedia
+DOMAIN-KEYWORD,clubhouse,GMedia
+HOST,clubhouse.pubnub.com,GMedia
+HOST,clubhouseprod.s3.amazonaws.com,GMedia
+HOST, ap-oversea-tls.agora.io, GMedia
+HOST, ap-oversea.agora.io,GMedia
+HOST, ap-oversea2.agora.io,GMedia
+HOST, report-oversea.agora.io,GMedia
+IP-CIDR, 3.0.163.78/32,GMedia
+IP-CIDR, 13.230.60.35/32,GMedia
+IP-CIDR, 23.248.191.103/32,GMedia
+IP-CIDR, 23.248.191.105/32,GMedia
+IP-CIDR, 23.98.43.152/32,GMedia
+IP-CIDR, 35.168.106.53/32,GMedia
+IP-CIDR, 35.178.208.187/32,GMedia
+IP-CIDR, 45.40.48.11/32,GMedia
+IP-CIDR, 45.255.124.98/32,GMedia
+IP-CIDR, 45.255.124.100/32,GMedia
+IP-CIDR, 45.255.124.101/32,GMedia
+IP-CIDR, 45.255.124.104/32,GMedia
+IP-CIDR, 45.255.124.105/32,GMedia
+IP-CIDR, 45.255.124.107/32,GMedia
+IP-CIDR, 45.255.124.108/32,GMedia
+IP-CIDR, 45.255.124.109/32,GMedia
+IP-CIDR, 45.255.124.135/32,GMedia
+IP-CIDR, 50.17.126.121/32,GMedia
+IP-CIDR, 52.52.84.170/32,GMedia
+IP-CIDR, 52.58.56.244/32,GMedia
+IP-CIDR, 52.178.26.110/32,GMedia
+IP-CIDR, 52.194.158.59/32,GMedia
+IP-CIDR, 52.221.46.208/32,GMedia
+IP-CIDR, 54.178.26.110/32,GMedia
+IP-CIDR, 69.28.51.148/32,GMedia
+IP-CIDR,103.65.41.137/32,GMedia
+IP-CIDR,103.65.41.139/32,GMedia
+IP-CIDR,103.65.41.157/32,GMedia
+IP-CIDR,103.65.41.159/32,GMedia
+IP-CIDR,103.65.41.166/32,GMedia
+IP-CIDR,103.65.41.169/32,GMedia
+IP-CIDR,103.98.18.181/32,GMedia
+IP-CIDR,103.98.18.183/32,GMedia
+IP-CIDR,103.98.18.184/32,GMedia
+IP-CIDR,103.98.18.189/32,GMedia
+IP-CIDR, 120.227.115.126/32,GMedia
+IP-CIDR, 122.10.255.165/32,GMedia
+IP-CIDR, 128.1.87.196/32, GMedia
+IP-CIDR,129.227.115.130/32,GMedia
+IP-CIDR,129.227.57.130/32,GMedia
+IP-CIDR,129.227.57.135/32,GMedia
+IP-CIDR,129.227.57.136/32,GMedia
+IP-CIDR,129.227.57.138/32,GMedia
+IP-CIDR,129.227.57.144/32,GMedia
+IP-CIDR,129.227.57.146/31,GMedia
+IP-CIDR,129.227.71.203/32,GMedia
+IP-CIDR, 148.153.126.146/32,GMedia
+IP-CIDR, 148.153.172.73/32,GMedia
+IP-CIDR, 148.153.172.74/32,GMedia
+IP-CIDR, 148.153.172.75/32,GMedia
+IP-CIDR, 148.153.172.76/32,GMedia
+IP-CIDR, 148.153.172.77/32,GMedia
+IP-CIDR, 164.52.0.244/32,GMedia
+IP-CIDR, 164.52.6.19/32,GMedia
+IP-CIDR, 164.52.6.21/32,GMedia
+IP-CIDR, 164.52.6.23/32,GMedia
+IP-CIDR, 164.52.6.24/32,GMedia
+IP-CIDR, 164.52.6.25/32,GMedia
+IP-CIDR, 164.52.32.57/32,GMedia
+IP-CIDR, 164.52.32.59/32,GMedia
+IP-CIDR, 164.52.32.60/32,GMedia
+IP-CIDR, 164.52.36.228/32,GMedia
+IP-CIDR, 164.52.36.232/32,GMedia
+IP-CIDR, 164.52.36.238/32,GMedia
+IP-CIDR, 164.52.36.243/32,GMedia
+IP-CIDR, 164.52.36.245/32,GMedia
+IP-CIDR, 164.52.36.254/32,GMedia
+IP-CIDR, 164.52.102.35/32,GMedia
+IP-CIDR, 164.52.102.66/32,GMedia
+IP-CIDR, 164.52.102.67/32,GMedia
+IP-CIDR, 164.52.102.68/32,GMedia
+IP-CIDR, 164.52.102.69/32,GMedia
+IP-CIDR, 164.52.102.70/32,GMedia
+IP-CIDR, 164.52.102.75/32,GMedia
+IP-CIDR, 164.52.102.76/32,GMedia
+IP-CIDR, 164.52.102.77/32,GMedia
+IP-CIDR, 164.52.102.91/32,GMedia
+IP-CIDR, 164.52.124.102/32,GMedia
+IP-CIDR, 199.190.44.36/32,GMedia
+IP-CIDR, 199.190.44.37/32,GMedia
+IP-CIDR, 202.181.136.106/32,GMedia
+IP-CIDR, 202.226.25.162/32,GMedia
+IP-CIDR, 202.226.25.166/32,GMedia
+IP-CIDR, 202.226.25.171/32,GMedia
+IP-CIDR, 202.226.25.195/32,GMedia
+IP-CIDR, 202.226.25.198/32,GMedia
+
 # > DAZN
 USER-AGENT,DAZN*,GMedia
 HOST-SUFFIX,d151l6v8er5bdm.cloudfront.net,GMedia
@@ -84,6 +245,146 @@ USER-AGENT,Deezer*,GMedia
 DOMAIN-SUFFIX,deezer.com,GMedia
 DOMAIN-SUFFIX,dzcdn.net,GMedia
 
+# > Disney+
+USER-AGENT,Disney*,GMedia
+HOST-SUFFIX,abc-studios.com,GMedia
+HOST-SUFFIX,abc.com,GMedia
+HOST-SUFFIX,adobedtm.com,GMedia
+HOST-SUFFIX,adventuresbydisney.com,GMedia
+HOST-SUFFIX,babble.com,GMedia
+HOST-SUFFIX,babyzone.com,GMedia
+HOST-SUFFIX,bam.nr-data.net,GMedia
+HOST-SUFFIX,bamgrid.com,GMedia
+HOST-SUFFIX,braze.com,GMedia
+HOST-SUFFIX,cdn.optimizely.com,GMedia
+HOST-SUFFIX,conviva.com,GMedia
+HOST-SUFFIX,d9.flashtalking.com,GMedia
+HOST-SUFFIX,dilcdn.com,GMedia
+HOST-SUFFIX,disney-asia.com,GMedia
+HOST-SUFFIX,disney-discount.com,GMedia
+HOST-SUFFIX,disney-plus.net,GMedia
+HOST-SUFFIX,disney-portal.my.onetrust.com,GMedia
+HOST-SUFFIX,disney-studio.com,GMedia
+HOST-SUFFIX,disney-studio.net,GMedia
+HOST-SUFFIX,disney.be,GMedia
+HOST-SUFFIX,disney.bg,GMedia
+HOST-SUFFIX,disney.ca,GMedia
+HOST-SUFFIX,disney.co.il,GMedia
+HOST-SUFFIX,disney.co.th,GMedia
+HOST-SUFFIX,disney.co.uk,GMedia
+HOST-SUFFIX,disney.co.za,GMedia
+HOST-SUFFIX,disney.com,GMedia
+HOST-SUFFIX,disney.com.au,GMedia
+HOST-SUFFIX,disney.com.br,GMedia
+HOST-SUFFIX,disney.cz,GMedia
+HOST-SUFFIX,disney.de,GMedia
+HOST-SUFFIX,disney.demdex.net,GMedia
+HOST-SUFFIX,disney.dk,GMedia
+HOST-SUFFIX,disney.es,GMedia
+HOST-SUFFIX,disney.fi,GMedia
+HOST-SUFFIX,disney.fr,GMedia
+HOST-SUFFIX,disney.gr,GMedia
+HOST-SUFFIX,disney.hu,GMedia
+HOST-SUFFIX,disney.id,GMedia
+HOST-SUFFIX,disney.in,GMedia
+HOST-SUFFIX,disney.io,GMedia
+HOST-SUFFIX,disney.it,GMedia
+HOST-SUFFIX,disney.my,GMedia
+HOST-SUFFIX,disney.my.sentry.io,GMedia
+HOST-SUFFIX,disney.nl,GMedia
+HOST-SUFFIX,disney.no,GMedia
+HOST-SUFFIX,disney.ph,GMedia
+HOST-SUFFIX,disney.pl,GMedia
+HOST-SUFFIX,disney.pt,GMedia
+HOST-SUFFIX,disney.ro,GMedia
+HOST-SUFFIX,disney.se,GMedia
+HOST-SUFFIX,disney.sg,GMedia
+HOST-SUFFIX,disneyadsales.com,GMedia
+HOST-SUFFIX,disneyarena.com,GMedia
+HOST-SUFFIX,disneyaulani.com,GMedia
+HOST-SUFFIX,disneybaby.com,GMedia
+HOST-SUFFIX,disneycareers.com,GMedia
+HOST-SUFFIX,disneychannelonstage.com,GMedia
+HOST-SUFFIX,disneychannelroadtrip.com,GMedia
+HOST-SUFFIX,disneycruisebrasil.com,GMedia
+HOST-SUFFIX,disneyenconcert.com,GMedia
+HOST-SUFFIX,disneyiejobs.com,GMedia
+HOST-SUFFIX,disneyinflight.com,GMedia
+HOST-SUFFIX,disneyjunior.com,GMedia
+HOST-SUFFIX,disneyjuniortreataday.com,GMedia
+HOST-SUFFIX,disneylatino.com,GMedia
+HOST-SUFFIX,disneymagicmoments.co.il,GMedia
+HOST-SUFFIX,disneymagicmoments.co.uk,GMedia
+HOST-SUFFIX,disneymagicmoments.co.za,GMedia
+HOST-SUFFIX,disneymagicmoments.de,GMedia
+HOST-SUFFIX,disneymagicmoments.es,GMedia
+HOST-SUFFIX,disneymagicmoments.fr,GMedia
+HOST-SUFFIX,disneymagicmoments.gen.tr,GMedia
+HOST-SUFFIX,disneymagicmoments.gr,GMedia
+HOST-SUFFIX,disneymagicmoments.it,GMedia
+HOST-SUFFIX,disneymagicmoments.pl,GMedia
+HOST-SUFFIX,disneyme.com,GMedia
+HOST-SUFFIX,disneymeetingsandevents.com,GMedia
+HOST-SUFFIX,disneymovieinsiders.com,GMedia
+HOST-SUFFIX,disneymusicpromotion.com,GMedia
+HOST-SUFFIX,disneynewseries.com,GMedia
+HOST-SUFFIX,disneynow.com,GMedia
+HOST-SUFFIX,disneypeoplesurveys.com,GMedia
+HOST-SUFFIX,disneyplus.bn5x.net,GMedia
+HOST-SUFFIX,disneyplus.com,GMedia
+HOST-SUFFIX,disneyredirects.com,GMedia
+HOST-SUFFIX,disneysrivieraresort.com,GMedia
+HOST-SUFFIX,disneystore.com,GMedia
+HOST-SUFFIX,disneystreaming.com,GMedia
+HOST-SUFFIX,disneysubscription.com,GMedia
+HOST-SUFFIX,disneyturkiye.com.tr,GMedia
+HOST-SUFFIX,disneytvajobs.com,GMedia
+HOST-SUFFIX,disneyworld-go.com,GMedia
+HOST-SUFFIX,dssott.com,GMedia
+HOST-SUFFIX,edgedatg.com,GMedia
+HOST-SUFFIX,espn.com,GMedia
+HOST-SUFFIX,espn.hb.omtrdc.net,GMedia
+HOST-SUFFIX,espncdn.com,GMedia
+HOST-SUFFIX,espndotcom.tt.omtrdc.net,GMedia
+HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,GMedia
+HOST-SUFFIX,go-disneyworldgo.com,GMedia
+HOST-SUFFIX,go.com,GMedia
+HOST-SUFFIX,js-agent.newrelic.com,GMedia
+HOST-SUFFIX,marvel.com,GMedia
+HOST-SUFFIX,marvel10thanniversary.com,GMedia
+HOST-SUFFIX,marveldimensionofheroes.com,GMedia
+HOST-SUFFIX,marvelparty.net,GMedia
+HOST-SUFFIX,marvelpinball.com,GMedia
+HOST-SUFFIX,marvelsdoubleagent.com,GMedia
+HOST-SUFFIX,marvelspotlightplays.com,GMedia
+HOST-SUFFIX,marvelsuperheroseptember.com,GMedia
+HOST-SUFFIX,marvelsuperwar.com,GMedia
+HOST-SUFFIX,mickey.tv,GMedia
+HOST-SUFFIX,moviesanywhere.com,GMedia
+HOST-SUFFIX,natgeomaps.com,GMedia
+HOST-SUFFIX,nationalgeographic.com,GMedia
+HOST-SUFFIX,nationalgeographicpartners.com,GMedia
+HOST-SUFFIX,ngeo.com,GMedia
+HOST-SUFFIX,playmation.com,GMedia
+HOST-SUFFIX,shopdisney.com,GMedia
+HOST-SUFFIX,shops-disney.com,GMedia
+HOST-SUFFIX,sorcerersarena.com,GMedia
+HOST-SUFFIX,spaindisney.com,GMedia
+HOST-SUFFIX,starwars.com,GMedia
+HOST-SUFFIX,starwarsgalacticstarcruiser.com,GMedia
+HOST-SUFFIX,streamingdisney.net,GMedia
+HOST-SUFFIX,themarvelexperiencetour.com,GMedia
+HOST-SUFFIX,thestationbymaker.com,GMedia
+HOST-SUFFIX,thisispolaris.com,GMedia
+HOST-SUFFIX,watchdisneyfe.com,GMedia
+HOST-SUFFIX,watchespn.com,GMedia
+DOMAIN-SUFFIX,bamgrid.com,GMedia
+DOMAIN-SUFFIX,disneyplus.com,GMedia
+DOMAIN-SUFFIX,disney-plus.net,GMedia
+DOMAIN-SUFFIX,disneystreaming.com,GMedia
+DOMAIN-SUFFIX,dssott.com,GMedia
+DOMAIN,cdn.registerdisney.go.com,GMedia
+
 # > DMM
 DOMAIN-SUFFIX,dmm.co.jp,GMedia
 DOMAIN-SUFFIX,dmm.com,GMedia
@@ -99,6 +400,306 @@ HOST,edge.api.brightcove.com,GMedia
 HOST-SUFFIX,content.jwplatform.com,GMedia
 HOST-SUFFIX,videos-f.jwpsrv.com,GMedia
 
+# > Fox
+HOST-SUFFIX,fox,GMedia
+HOST-SUFFIX,afewmomentswith.com,GMedia
+HOST-SUFFIX,akamaized.net,GMedia
+HOST-SUFFIX,anidom.com,GMedia
+HOST-SUFFIX,bentobox.tv,GMedia
+HOST-SUFFIX,casoneexchange.com,GMedia
+HOST-SUFFIX,cdn-fox-networks-group-green.akamaized.net,GMedia
+HOST-SUFFIX,coronavirusnow.com,GMedia
+HOST-SUFFIX,d3cv4a9a9wh0bt.cloudfront.net,GMedia
+HOST-SUFFIX,dashasiafox.akamaized.net,GMedia
+HOST-SUFFIX,fox-corporation.com,GMedia
+HOST-SUFFIX,fox-news.com,GMedia
+HOST-SUFFIX,fox.com,GMedia
+HOST-SUFFIX,fox.tv,GMedia
+HOST-SUFFIX,fox10.tv,GMedia
+HOST-SUFFIX,fox10news.com,GMedia
+HOST-SUFFIX,fox10phoenix.com,GMedia
+HOST-SUFFIX,fox11.com,GMedia
+HOST-SUFFIX,fox13memphis.com,GMedia
+HOST-SUFFIX,fox13news.com,GMedia
+HOST-SUFFIX,fox23.com,GMedia
+HOST-SUFFIX,fox23maine.com,GMedia
+HOST-SUFFIX,fox247.com,GMedia
+HOST-SUFFIX,fox247.tv,GMedia
+HOST-SUFFIX,fox26.com,GMedia
+HOST-SUFFIX,fox26houston.com,GMedia
+HOST-SUFFIX,fox28media.com,GMedia
+HOST-SUFFIX,fox29.com,GMedia
+HOST-SUFFIX,fox2detroit.com,GMedia
+HOST-SUFFIX,fox2news.com,GMedia
+HOST-SUFFIX,fox32.com,GMedia
+HOST-SUFFIX,fox32chicago.com,GMedia
+HOST-SUFFIX,fox35orlando.com,GMedia
+HOST-SUFFIX,fox38corpuschristi.com,GMedia
+HOST-SUFFIX,fox42kptm.com,GMedia
+HOST-SUFFIX,fox46.com,GMedia
+HOST-SUFFIX,fox46charlotte.com,GMedia
+HOST-SUFFIX,fox47.com,GMedia
+HOST-SUFFIX,fox49.tv,GMedia
+HOST-SUFFIX,fox4news.com,GMedia
+HOST-SUFFIX,fox51tns.net,GMedia
+HOST-SUFFIX,fox5atlanta.com,GMedia
+HOST-SUFFIX,fox5dc.com,GMedia
+HOST-SUFFIX,fox5ny.com,GMedia
+HOST-SUFFIX,fox5storm.com,GMedia
+HOST-SUFFIX,fox6now.com,GMedia
+HOST-SUFFIX,fox7.com,GMedia
+HOST-SUFFIX,fox7austin.com,GMedia
+HOST-SUFFIX,fox9.com,GMedia
+HOST-SUFFIX,foxacrossamerica.com,GMedia
+HOST-SUFFIX,foxaffiliateportal.com,GMedia
+HOST-SUFFIX,foxandfriends.com,GMedia
+HOST-SUFFIX,foxbet.com,GMedia
+HOST-SUFFIX,foxbroadcasting.zendesk.com,GMedia
+HOST-SUFFIX,foxbusiness.com,GMedia
+HOST-SUFFIX,foxbusiness.tv,GMedia
+HOST-SUFFIX,foxbusinessgo.com,GMedia
+HOST-SUFFIX,foxcanvasroom.com,GMedia
+HOST-SUFFIX,foxcareers.com,GMedia
+HOST-SUFFIX,foxcharlotte.com,GMedia
+HOST-SUFFIX,foxcincy.com,GMedia
+HOST-SUFFIX,foxcincy.jobs,GMedia
+HOST-SUFFIX,foxcincy.net,GMedia
+HOST-SUFFIX,foxcollegesports.com,GMedia
+HOST-SUFFIX,foxcorporation.com,GMedia
+HOST-SUFFIX,foxcreativeuniversity.com,GMedia
+HOST-SUFFIX,foxcredit.com,GMedia
+HOST-SUFFIX,foxcredit.org,GMedia
+HOST-SUFFIX,foxd.tv,GMedia
+HOST-SUFFIX,foxdcg.com,GMedia
+HOST-SUFFIX,foxdeportes.com,GMedia
+HOST-SUFFIX,foxdeportes.net,GMedia
+HOST-SUFFIX,foxdeportes.tv,GMedia
+HOST-SUFFIX,foxdigitalmovies.com,GMedia
+HOST-SUFFIX,foxdoua.com,GMedia
+HOST-SUFFIX,foxentertainment.com,GMedia
+HOST-SUFFIX,foxest.com,GMedia
+HOST-SUFFIX,foxfaq.com,GMedia
+HOST-SUFFIX,foxfdm.com,GMedia
+HOST-SUFFIX,foxfiles.com,GMedia
+HOST-SUFFIX,foxinc.com,GMedia
+HOST-SUFFIX,foxkansas.com,GMedia
+HOST-SUFFIX,foxla.com,GMedia
+HOST-SUFFIX,foxla.tv,GMedia
+HOST-SUFFIX,foxlexington.com,GMedia
+HOST-SUFFIX,foxmediacloud.com,GMedia
+HOST-SUFFIX,foxnation.com,GMedia
+HOST-SUFFIX,foxnebraska.com,GMedia
+HOST-SUFFIX,foxneo.com,GMedia
+HOST-SUFFIX,foxneodigital.com,GMedia
+HOST-SUFFIX,foxnetworks.info,GMedia
+HOST-SUFFIX,foxnetworksinfo.com,GMedia
+HOST-SUFFIX,foxnews.cc,GMedia
+HOST-SUFFIX,foxnews.com,GMedia
+HOST-SUFFIX,foxnews.net,GMedia
+HOST-SUFFIX,foxnews.org,GMedia
+HOST-SUFFIX,foxnews.tv,GMedia
+HOST-SUFFIX,foxnewsaffiliates.com,GMedia
+HOST-SUFFIX,foxnewsaroundtheworld.com,GMedia
+HOST-SUFFIX,foxnewsb2b.com,GMedia
+HOST-SUFFIX,foxnewschannel.com,GMedia
+HOST-SUFFIX,foxnewsgo.net,GMedia
+HOST-SUFFIX,foxnewsgo.org,GMedia
+HOST-SUFFIX,foxnewsgo.tv,GMedia
+HOST-SUFFIX,foxnewshealth.com,GMedia
+HOST-SUFFIX,foxnewslatino.com,GMedia
+HOST-SUFFIX,foxnewsmagazine.com,GMedia
+HOST-SUFFIX,foxnewsnetwork.com,GMedia
+HOST-SUFFIX,foxnewsopinion.com,GMedia
+HOST-SUFFIX,foxnewsplayer-a.akamaihd.net,GMedia
+HOST-SUFFIX,foxnewspodcasts.com,GMedia
+HOST-SUFFIX,foxnewspolitics.com,GMedia
+HOST-SUFFIX,foxnewsradio.com,GMedia
+HOST-SUFFIX,foxnewsrundown.com,GMedia
+HOST-SUFFIX,foxnewssunday.com,GMedia
+HOST-SUFFIX,foxnow.com,GMedia
+HOST-SUFFIX,foxon.com,GMedia
+HOST-SUFFIX,foxphiladelphia.com,GMedia
+HOST-SUFFIX,foxplay.com,GMedia
+HOST-SUFFIX,foxplus.com,GMedia
+HOST-SUFFIX,foxpoker.com,GMedia
+HOST-SUFFIX,foxrad.io,GMedia
+HOST-SUFFIX,foxredeem.com,GMedia
+HOST-SUFFIX,foxrelease.com,GMedia
+HOST-SUFFIX,foxrichmond.com,GMedia
+HOST-SUFFIX,foxrobots.com,GMedia
+HOST-SUFFIX,foxsmallbusinesscenter.com,GMedia
+HOST-SUFFIX,foxsmallbusinesscenter.net,GMedia
+HOST-SUFFIX,foxsmallbusinesscenter.org,GMedia
+HOST-SUFFIX,foxsoccer.net,GMedia
+HOST-SUFFIX,foxsoccer.tv,GMedia
+HOST-SUFFIX,foxsoccermatchpass.com,GMedia
+HOST-SUFFIX,foxsoccerplus.com,GMedia
+HOST-SUFFIX,foxsoccerplus.net,GMedia
+HOST-SUFFIX,foxsoccerplus.tv,GMedia
+HOST-SUFFIX,foxsoccershop.com,GMedia
+HOST-SUFFIX,foxsports-chicago.com,GMedia
+HOST-SUFFIX,foxsports-newyork.com,GMedia
+HOST-SUFFIX,foxsports-world.com,GMedia
+HOST-SUFFIX,foxsports.cl,GMedia
+HOST-SUFFIX,foxsports.co,GMedia
+HOST-SUFFIX,foxsports.co.ve,GMedia
+HOST-SUFFIX,foxsports.com,GMedia
+HOST-SUFFIX,foxsports.com.ar,GMedia
+HOST-SUFFIX,foxsports.com.bo,GMedia
+HOST-SUFFIX,foxsports.com.br,GMedia
+HOST-SUFFIX,foxsports.com.co,GMedia
+HOST-SUFFIX,foxsports.com.ec,GMedia
+HOST-SUFFIX,foxsports.com.gt,GMedia
+HOST-SUFFIX,foxsports.com.mx,GMedia
+HOST-SUFFIX,foxsports.com.pe,GMedia
+HOST-SUFFIX,foxsports.com.py,GMedia
+HOST-SUFFIX,foxsports.com.uy,GMedia
+HOST-SUFFIX,foxsports.com.ve,GMedia
+HOST-SUFFIX,foxsports.gt,GMedia
+HOST-SUFFIX,foxsports.info,GMedia
+HOST-SUFFIX,foxsports.net,GMedia
+HOST-SUFFIX,foxsports.net.br,GMedia
+HOST-SUFFIX,foxsports.pe,GMedia
+HOST-SUFFIX,foxsports.sv,GMedia
+HOST-SUFFIX,foxsports.uy,GMedia
+HOST-SUFFIX,foxsports01-i.akamaihd.net,GMedia
+HOST-SUFFIX,foxsports02-i.akamaihd.net,GMedia
+HOST-SUFFIX,foxsports03-i.akamaihd.net,GMedia
+HOST-SUFFIX,foxsports2.com,GMedia
+HOST-SUFFIX,foxsportsflorida.com,GMedia
+HOST-SUFFIX,foxsportsgo.com,GMedia
+HOST-SUFFIX,foxsportsla.com,GMedia
+HOST-SUFFIX,foxsportsnetmilwaukee.com,GMedia
+HOST-SUFFIX,foxsportsneworleans.com,GMedia
+HOST-SUFFIX,foxsportsracing.com,GMedia
+HOST-SUFFIX,foxsportssupports.com,GMedia
+HOST-SUFFIX,foxsportsuniversity.com,GMedia
+HOST-SUFFIX,foxsportsworld.com,GMedia
+HOST-SUFFIX,foxstudiolot.com,GMedia
+HOST-SUFFIX,foxsuper6.com,GMedia
+HOST-SUFFIX,foxtel.com,GMedia
+HOST-SUFFIX,foxtel.com.au,GMedia
+HOST-SUFFIX,foxtelevisionstations.com,GMedia
+HOST-SUFFIX,foxtv.com,GMedia
+HOST-SUFFIX,foxtvdvd.com,GMedia
+HOST-SUFFIX,foxuv.com,GMedia
+HOST-SUFFIX,foxweatherwatch.com,GMedia
+HOST-SUFFIX,fse.tv,GMedia
+HOST-SUFFIX,fssta.com,GMedia
+HOST-SUFFIX,fxn.ws,GMedia
+HOST-SUFFIX,fxnetwork.com,GMedia
+HOST-SUFFIX,fxnetworks.com,GMedia
+HOST-SUFFIX,geraldoatlarge.com,GMedia
+HOST-SUFFIX,gooddaychicago.com,GMedia
+HOST-SUFFIX,joeswall.com,GMedia
+HOST-SUFFIX,kicu.tv,GMedia
+HOST-SUFFIX,kilmeadeandfriends.com,GMedia
+HOST-SUFFIX,ktvu.com,GMedia
+HOST-SUFFIX,maskedsingerfox.com,GMedia
+HOST-SUFFIX,my13la.com,GMedia
+HOST-SUFFIX,my20dc.com,GMedia
+HOST-SUFFIX,my20houston.com,GMedia
+HOST-SUFFIX,my29tv.com,GMedia
+HOST-SUFFIX,my45.com,GMedia
+HOST-SUFFIX,my9nj.com,GMedia
+HOST-SUFFIX,myfoxatlanta.com,GMedia
+HOST-SUFFIX,myfoxaustin.com,GMedia
+HOST-SUFFIX,myfoxboston.com,GMedia
+HOST-SUFFIX,myfoxcharlotte.com,GMedia
+HOST-SUFFIX,myfoxchicago.com,GMedia
+HOST-SUFFIX,myfoxdc.com,GMedia
+HOST-SUFFIX,myfoxdetroit.com,GMedia
+HOST-SUFFIX,myfoxdfw.com,GMedia
+HOST-SUFFIX,myfoxhouston.com,GMedia
+HOST-SUFFIX,myfoxhurricane.com,GMedia
+HOST-SUFFIX,myfoxla.com,GMedia
+HOST-SUFFIX,myfoxlosangeles.com,GMedia
+HOST-SUFFIX,myfoxlubbock.com,GMedia
+HOST-SUFFIX,myfoxmaine.com,GMedia
+HOST-SUFFIX,myfoxny.com,GMedia
+HOST-SUFFIX,myfoxorlando.com,GMedia
+HOST-SUFFIX,myfoxphilly.com,GMedia
+HOST-SUFFIX,myfoxphoenix.com,GMedia
+HOST-SUFFIX,myfoxsanfran.com,GMedia
+HOST-SUFFIX,myfoxtampa.com,GMedia
+HOST-SUFFIX,myfoxtampabay.com,GMedia
+HOST-SUFFIX,myfoxtwincities.com,GMedia
+HOST-SUFFIX,myfoxzone.com,GMedia
+HOST-SUFFIX,myq2.com,GMedia
+HOST-SUFFIX,newsnowfox.com,GMedia
+HOST-SUFFIX,now.com,GMedia
+HOST-SUFFIX,orlandohurricane.com,GMedia
+HOST-SUFFIX,paradisehotelquizfox.com,GMedia
+HOST-SUFFIX,q13.com,GMedia
+HOST-SUFFIX,q13fox.com,GMedia
+HOST-SUFFIX,realamericanstories.com,GMedia
+HOST-SUFFIX,realamericanstories.info,GMedia
+HOST-SUFFIX,realamericanstories.net,GMedia
+HOST-SUFFIX,realamericanstories.org,GMedia
+HOST-SUFFIX,realamericanstories.tv,GMedia
+HOST-SUFFIX,realmilwaukeenow.com,GMedia
+HOST-SUFFIX,rprimelab.com,GMedia
+HOST-SUFFIX,shopspeedtv.com,GMedia
+HOST-SUFFIX,soccermatchpass.com,GMedia
+HOST-SUFFIX,speeddreamride.com,GMedia
+HOST-SUFFIX,speedfantasybid.com,GMedia
+HOST-SUFFIX,speedracegear.com,GMedia
+HOST-SUFFIX,speedxtra.com,GMedia
+HOST-SUFFIX,staticasiafox.akamaized.net,GMedia
+HOST-SUFFIX,teenchoice.com,GMedia
+HOST-SUFFIX,testonfox.com,GMedia
+HOST-SUFFIX,theclasshroom.com,GMedia
+HOST-SUFFIX,thefoxnation.com,GMedia
+HOST-SUFFIX,thegeorgiascene.com,GMedia
+HOST-SUFFIX,theplatform.com,GMedia
+HOST-SUFFIX,uplynk.com,GMedia
+HOST-SUFFIX,whatthefox.com,GMedia
+HOST-SUFFIX,whosthehost.com,GMedia
+HOST-SUFFIX,wofl.tv,GMedia
+HOST-SUFFIX,woflthenewsstation.com,GMedia
+HOST-SUFFIX,wogx.com,GMedia
+USER-AGENT,FOX%20NOW*,GMedia
+USER-AGENT,FOXPlus*,GMedia
+
+# > HBO NOW & HBO Go &HBO MAX
+USER-AGENT,HBO%20NOW*,GMedia
+USER-AGENT,HBOMAX*,GMedia
+HOST-SUFFIX,bcbolthboa-a.akamaihd.net,GMedia
+HOST-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net,GMedia
+HOST-SUFFIX,cinemax.com,GMedia
+HOST-SUFFIX,dai3fd1oh325y.cloudfront.net,GMedia
+HOST-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,GMedia
+HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,GMedia
+HOST-SUFFIX,forthethrone.com,GMedia
+HOST-SUFFIX,hbo.com,GMedia
+HOST-SUFFIX,hboasia.com,GMedia
+HOST-SUFFIX,hboasia1-i.akamaihd.net,GMedia
+HOST-SUFFIX,hboasia2-i.akamaihd.net,GMedia
+HOST-SUFFIX,hboasia3-i.akamaihd.net,GMedia
+HOST-SUFFIX,hboasia4-i.akamaihd.net,GMedia
+HOST-SUFFIX,hboasia5-i.akamaihd.net,GMedia
+HOST-SUFFIX,hbogeo.cust.footprint.net,GMedia
+HOST-SUFFIX,hbogo.com,GMedia
+HOST-SUFFIX,hbogoasia.com,GMedia
+HOST-SUFFIX,hbogoasia.hk,GMedia
+HOST-SUFFIX,hbomax.com,GMedia
+HOST-SUFFIX,hbonow.com,GMedia
+HOST-SUFFIX,manifest.prod.boltdns.net,GMedia
+HOST-SUFFIX,maxgo.com,GMedia
+HOST-SUFFIX,now-ashare.com,GMedia
+HOST-SUFFIX,now-tv.com,GMedia
+HOST-SUFFIX,now.com.hk,GMedia
+HOST-SUFFIX,nowe.com,GMedia
+HOST-SUFFIX,players.brightcove.net,GMedia
+HOST-SUFFIX,s3-ap-southeast-1.amazonaws.com,GMedia
+HOST-SUFFIX,youboranqs01.com,GMedia
+HOST-SUFFIX,cmaf.cf.us.hbomaxcdn.com,GMedia
+HOST-SUFFIX,cmaf.lv3.us.hbomaxcdn.com,GMedia
+DOMAIN-SUFFIX,hbo.com,GMedia
+DOMAIN-SUFFIX,hbogo.com,GMedia
+DOMAIN-SUFFIX,hbonow.com,GMedia
+DOMAIN-SUFFIX,hbomax.com,GMedia
+
 # > 华文电视
 USER-AGENT,HWTVMobile*,GMedia
 DOMAIN-SUFFIX,5itv.tv,GMedia
@@ -107,6 +708,64 @@ DOMAIN-SUFFIX,ocnttv.com,GMedia
 # > Himalaya
 USER-AGENT,Himalaya*,GMedia
 DOMAIN-SUFFIX,himalaya.com,GMedia
+
+# > Hulu
+HOST-SUFFIX,112263.com,GMedia
+HOST-SUFFIX,assetshuluimcom-a.akamaihd.net,GMedia
+HOST-SUFFIX,callhulu.com,GMedia
+HOST-SUFFIX,cws-hulu.conviva.com,GMedia
+HOST-SUFFIX,findyourlimits.com,GMedia
+HOST-SUFFIX,freehulu.com,GMedia
+HOST-SUFFIX,happyon.jp,GMedia
+HOST-SUFFIX,hjholdings.jp,GMedia
+HOST-SUFFIX,hooloo.tv,GMedia
+HOST-SUFFIX,hoolu.com,GMedia
+HOST-SUFFIX,hoolu.tv,GMedia
+HOST-SUFFIX,hu1u.com,GMedia
+HOST-SUFFIX,huloo.cc,GMedia
+HOST-SUFFIX,huloo.tv,GMedia
+HOST-SUFFIX,hulu.com,GMedia
+HOST-SUFFIX,hulu.hb.omtrdc.net,GMedia
+HOST-SUFFIX,hulu.jp,GMedia
+HOST-SUFFIX,hulu.sc.omtrdc.net,GMedia
+HOST-SUFFIX,hulu.tv,GMedia
+HOST-SUFFIX,hulu.us,GMedia
+HOST-SUFFIX,huluaction.com,GMedia
+HOST-SUFFIX,huluad.com,GMedia
+HOST-SUFFIX,huluapp.com,GMedia
+HOST-SUFFIX,huluasks.com,GMedia
+HOST-SUFFIX,hulucall.com,GMedia
+HOST-SUFFIX,hulufree.com,GMedia
+HOST-SUFFIX,hulugans.com,GMedia
+HOST-SUFFIX,hulugermany.com,GMedia
+HOST-SUFFIX,hulugo.com,GMedia
+HOST-SUFFIX,huluim.com,GMedia
+HOST-SUFFIX,huluinstantmessenger.com,GMedia
+HOST-SUFFIX,huluitaly.com,GMedia
+HOST-SUFFIX,hulunet.com,GMedia
+HOST-SUFFIX,hulunetwork.com,GMedia
+HOST-SUFFIX,huluplus.com,GMedia
+HOST-SUFFIX,hulupremium.com,GMedia
+HOST-SUFFIX,hulupurchase.com,GMedia
+HOST-SUFFIX,huluqa.com,GMedia
+HOST-SUFFIX,hulurussia.com,GMedia
+HOST-SUFFIX,huluspain.com,GMedia
+HOST-SUFFIX,hulusports.com,GMedia
+HOST-SUFFIX,hulustream.com,GMedia
+HOST-SUFFIX,huluteam.com,GMedia
+HOST-SUFFIX,hulutv.com,GMedia
+HOST-SUFFIX,huluusa.com,GMedia
+HOST-SUFFIX,joinmaidez.com,GMedia
+HOST-SUFFIX,mushymush.tv,GMedia
+HOST-SUFFIX,myhulu.com,GMedia
+HOST-SUFFIX,originalhulu.com,GMedia
+HOST-SUFFIX,payhulu.com,GMedia
+HOST-SUFFIX,prod.hjholdings.tv,GMedia
+HOST-SUFFIX,registerhulu.com,GMedia
+HOST-SUFFIX,streaks.jp,GMedia
+HOST-SUFFIX,thehulubraintrust.com,GMedia
+HOST-SUFFIX,wwwhuluplus.com,GMedia
+HOST-SUFFIX,yb.uncn.jp,GMedia
 
 # > ITV
 USER-AGENT,ITV_Player*,GMedia
@@ -177,6 +836,98 @@ USER-AGENT,Naver%20TV*,GMedia
 DOMAIN-SUFFIX,naver.com,GMedia
 DOMAIN-SUFFIX,smartmediarep.com,GMedia
 
+# > Netflix
+HOST-SUFFIX,fast.com,GMedia
+HOST-SUFFIX,netflix.ca,GMedia
+HOST-SUFFIX,netflix.com,GMedia
+HOST-SUFFIX,netflix.com.edgesuite.net,GMedia
+HOST-SUFFIX,netflix.net,GMedia
+HOST-SUFFIX,netflixdnstest0.com,GMedia
+HOST-SUFFIX,netflixdnstest1.com,GMedia
+HOST-SUFFIX,netflixdnstest10.com,GMedia
+HOST-SUFFIX,netflixdnstest2.com,GMedia
+HOST-SUFFIX,netflixdnstest3.com,GMedia
+HOST-SUFFIX,netflixdnstest4.com,GMedia
+HOST-SUFFIX,netflixdnstest5.com,GMedia
+HOST-SUFFIX,netflixdnstest6.com,GMedia
+HOST-SUFFIX,netflixdnstest7.com,GMedia
+HOST-SUFFIX,netflixdnstest8.com,GMedia
+HOST-SUFFIX,netflixdnstest9.com,GMedia
+HOST-SUFFIX,netflixinvestor.com,GMedia
+HOST-SUFFIX,netflixtechblog.com,GMedia
+HOST-SUFFIX,nflxext.com,GMedia
+HOST-SUFFIX,nflximg.com,GMedia
+HOST-SUFFIX,nflximg.net,GMedia
+HOST-SUFFIX,nflxsearch.net,GMedia
+HOST-SUFFIX,nflxso.net,GMedia
+HOST-SUFFIX,nflxvideo.net,GMedia
+HOST-SUFFIX,us-west-2.amazonaws.com,GMedia
+HOST-KEYWORD,dualstack.apiproxy-,GMedia
+HOST-KEYWORD,dualstack.apiproxy-device-prod-nlb-,GMedia
+HOST-KEYWORD,dualstack.ichnaea-web-,GMedia
+USER-AGENT,Argo*,GMedia
+IP-CIDR,103.87.204.0/22,GMedia
+IP-CIDR,108.175.32.0/20,GMedia
+IP-CIDR,185.2.220.0/22,GMedia
+IP-CIDR,185.9.188.0/22,GMedia
+IP-CIDR,192.173.64.0/18,GMedia
+IP-CIDR,198.38.96.0/19,GMedia
+IP-CIDR,198.45.48.0/20,GMedia
+IP-CIDR,203.116.0.0/16,GMedia
+IP-CIDR,203.198.0.0/20,GMedia
+IP-CIDR,203.198.80.0/21,GMedia
+IP-CIDR,203.75.84.0/24,GMedia
+IP-CIDR,203.83.220.0/22,GMedia
+IP-CIDR,207.45.72.0/22,GMedia
+IP-CIDR,208.75.76.0/22,GMedia
+IP-CIDR,218.102.32.0/19,GMedia
+IP-CIDR,219.76.0.0/17,GMedia
+IP-CIDR,23.246.0.0/18,GMedia
+IP-CIDR,23.78.0.0/16,GMedia
+IP-CIDR,34.192.0.0/16,GMedia
+IP-CIDR,34.208.0.0/12,GMedia
+IP-CIDR,34.248.0.0/13,GMedia
+IP-CIDR,35.160.0.0/13,GMedia
+IP-CIDR,37.77.184.0/21,GMedia
+IP-CIDR,38.72.126.0/24,GMedia
+IP-CIDR,44.224.0.0/16,GMedia
+IP-CIDR,44.230.0.0/16,GMedia
+IP-CIDR,45.57.0.0/17,GMedia
+IP-CIDR,52.0.0.0/15,GMedia
+IP-CIDR,52.10.0.0/15,GMedia
+IP-CIDR,52.12.0.0/15,GMedia
+IP-CIDR,52.22.0.0/16,GMedia
+IP-CIDR,52.24.0.0/14,GMedia
+IP-CIDR,52.32.0.0/14,GMedia
+IP-CIDR,52.40.0.0/14,GMedia
+IP-CIDR,52.48.0.0/14,GMedia
+IP-CIDR,52.5.0.0/16,GMedia
+IP-CIDR,52.54.0.0/16,GMedia
+IP-CIDR,52.7.0.0/16,GMedia
+IP-CIDR,52.71.0.0/16,GMedia
+IP-CIDR,52.72.0.0/16,GMedia
+IP-CIDR,52.88.0.0/15,GMedia
+IP-CIDR,54.0.0.0/16,GMedia
+IP-CIDR,54.148.0.0/15,GMedia
+IP-CIDR,54.175.0.0/16,GMedia
+IP-CIDR,54.186.0.0/15,GMedia
+IP-CIDR,54.188.0.0/15,GMedia
+IP-CIDR,54.213.0.0/16,GMedia
+IP-CIDR,54.214.128.0/17,GMedia
+IP-CIDR,54.68.0.0/15,GMedia
+IP-CIDR,54.74.0.0/15,GMedia
+IP-CIDR,54.76.0.0/15,GMedia
+IP-CIDR,54.85.0.0/16,GMedia
+IP-CIDR,54.86.0.0/16,GMedia
+IP-CIDR,64.120.128.0/17,GMedia
+IP-CIDR,66.197.128.0/17,GMedia
+IP-CIDR,69.53.224.0/19,GMedia
+IP-CIDR,8.41.4.0/24,GMedia
+IP6-CIDR,2607:fb10::/32,GMedia
+IP6-CIDR,2620:10c:7000::/44,GMedia
+IP6-CIDR,2a00:86c0::/32,GMedia
+IP6-CIDR,2a03:5640::/32,GMedia
+
 # > niconico
 USER-AGENT,Niconico*,GMedia
 DOMAIN-SUFFIX,dmc.nico,GMedia
@@ -192,16 +943,51 @@ HOST-SUFFIX,p-cdn.us,GMedia
 USER-AGENT,PBS*,GMedia
 HOST-SUFFIX,pbs.org,GMedia
 
+# > Pornhub
+DOMAIN-SUFFIX,phncdn.com,GMedia
+DOMAIN-SUFFIX,phprcdn.com,GMedia
+DOMAIN-SUFFIX,pornhub.com,GMedia
+DOMAIN-SUFFIX,pornhubpremium.com,GMedia
+
 # > SoundCloud
 USER-AGENT,SoundCloud*,GMedia
 HOST-SUFFIX,p-cdn.us,GMedia
 HOST-SUFFIX,sndcdn.com,GMedia
 HOST-SUFFIX,soundcloud.com,GMedia
 
+# > Spotify
+USER-AGENT,*Spotify*,GMedia
+USER-AGENT,Spotify*,GMedia
+HOST-SUFFIX,byspotify.com,GMedia
+HOST-SUFFIX,pscdn.co,GMedia
+HOST-SUFFIX,scdn.co,GMedia
+HOST-SUFFIX,spoti.fi,GMedia
+HOST-SUFFIX,spotify-com.akamaized.net,GMedia
+HOST-SUFFIX,spotify-everywhere.com,GMedia
+HOST-SUFFIX,spotify.com,GMedia
+HOST-SUFFIX,spotify.design,GMedia
+HOST-SUFFIX,spotifycdn.com,GMedia
+HOST-SUFFIX,spotifycdn.net,GMedia
+HOST-SUFFIX,spotifycharts.com,GMedia
+HOST-SUFFIX,spotifycodes.com,GMedia
+HOST-SUFFIX,spotifyforbrands.com,GMedia
+HOST-SUFFIX,spotifyjobs.com,GMedia
+HOST-KEYWORD,-spotify-com,GMedia
+HOST-KEYWORD,spotify.com,GMedia
+IP-CIDR,35.186.224.47/32,GMedia
+
 # > 台湾好
 USER-AGENT,TaiwanGood*,GMedia
 DOMAIN-SUFFIX,skyking.com.tw,GMedia
 DOMAIN,hamifans.emome.net,GMedia
+
+# > TIDAL
+HOST-SUFFIX,tidal-cms.s3.amazonaws.com,GMedia
+HOST-SUFFIX,tidal.com,GMedia
+HOST-SUFFIX,tidalhifi.com,GMedia
+USER-AGENT,TIDAL*dia,GMedia
+USER-AGENT,TIDAL*,GMedia
+DOMAIN-SUFFIX,tidal.com,GMedia
 
 # > TVer
 USER-AGENT,TVer-Release*,GMedia
